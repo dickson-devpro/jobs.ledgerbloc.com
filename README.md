@@ -40,3 +40,4 @@ src/
   pages/*.md             ← privacy, terms, about, contact, disclosure
   assets/site.css
 ```
+# jobs.ledgerbloc.com
