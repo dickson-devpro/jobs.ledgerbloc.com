@@ -172,6 +172,7 @@ Return ONLY the full revised Markdown body, no META block.\n\n${body}`,
     // --- these three drive the Indeed CTA + related-article linking ---
     jobKeyword,
     jobKeywordBase: job,
+    searchKeyword: job,          // what the Indeed CTA searches — kept broad on purpose
     country: country.country,
     jobFamily: FAMILY[job] || "general",
     standfirst: meta.standfirst,

@@ -22,7 +22,7 @@
 
     <p class="standfirst">{{ standfirst }}</p>
 
-    {% if jobKeyword %}{{ cta.primary(jobKeyword, country, location) }}{% endif %}
+    {% if jobKeyword %}{{ cta.primary(searchKeyword or jobKeywordBase or jobKeyword, country, location) }}{% endif %}
 
     <div class="byline">
       <span class="avatar" aria-hidden="true">{{ author.initials }}</span>
@@ -60,8 +60,8 @@
     </div>
 
     {% if jobKeyword %}
-    {{ cta.primary(jobKeyword, country, location,
-        "Ready to apply for " + jobKeyword + " jobs in " + (country | countryLabel) + "?",
+    {{ cta.primary(searchKeyword or jobKeywordBase or jobKeyword, country, location,
+        "Ready to apply for " + (jobKeywordBase or jobKeyword) + " jobs in " + (country | countryLabel) + "?",
         "This search is filtered to roles posted in the last 7 days. Check each listing's own wording for sponsorship — employers state it in the ad.") }}
     {% endif %}
 

@@ -39,7 +39,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("indeedUrl", (keyword, country, location) => {
     const host = INDEED_DOMAIN[String(country || "").toLowerCase()] || "www.indeed.com";
-    const q = encodeURIComponent(String(keyword || "visa sponsorship").trim()).replace(/%20/g, "+");
+    // Keep queries broad enough to return results: strip visa jargon, cap at 3 words.
+    // Over-specific queries ("welder 482 visa sponsorship") return nothing on Indeed.
+    const JARGON = /\b(482|457|186|189|h-?1b|h-?2a|h-?2b|eb-?[0-9]|lmia|tss|blue card|skilled worker|certificate of sponsorship|sponsorship|sponsor|visa)\b/gi;
+    let clean = String(keyword || "").replace(JARGON, " ").replace(/\s+/g, " ").trim();
+    if (!clean) clean = String(keyword || "jobs").replace(/\s+/g, " ").trim();
+    clean = clean.split(" ").slice(0, 3).join(" ");
+    const q = encodeURIComponent(clean).replace(/%20/g, "+");
     let url = "https://" + host + "/jobs?q=" + q;
     if (location) url += "&l=" + encodeURIComponent(String(location).trim()).replace(/%20/g, "+");
     url += "&fromage=7&sort=date";

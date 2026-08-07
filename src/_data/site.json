@@ -17,7 +17,7 @@
       "name": "Canada",
       "slug": "canada",
       "country": "canada",
-      "jobKeyword": "LMIA visa sponsorship",
+      "jobKeyword": "LMIA",
       "description": "LMIA-backed and express-entry-friendly jobs across Canada, from skilled trades to healthcare."
     },
     {
@@ -31,14 +31,14 @@
       "name": "Europe",
       "slug": "europe",
       "country": "germany",
-      "jobKeyword": "visa sponsorship english speaking",
+      "jobKeyword": "english speaking",
       "description": "EU Blue Card and sponsorship roles in Germany, the Netherlands, France and beyond."
     },
     {
       "name": "Australia & NZ",
       "slug": "australia",
       "country": "australia",
-      "jobKeyword": "482 visa sponsorship",
+      "jobKeyword": "visa sponsorship",
       "description": "482 and skilled-migration roles across Australia and New Zealand."
     },
     {
