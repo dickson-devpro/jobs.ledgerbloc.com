@@ -1,0 +1,80 @@
+---
+layout: base.njk
+title: Home
+permalink: /
+pageType: home
+---
+{% set posts = collections.articles %}
+<div class="page page--single">
+<main class="home">
+
+  <section class="hero">
+    {% set lead = posts | first %}
+    {% if lead %}
+    <div class="hero-lead">
+      <span class="cat">{{ lead.data.category }}</span>
+      <h1><a href="{{ lead.url }}">{{ lead.data.title }}</a></h1>
+      <p>{{ lead.data.standfirst }}</p>
+      <p class="meta">{{ lead.data.author.name }} · {{ (lead.data.dateModified or lead.data.datePublished) | readableDate }}</p>
+    </div>
+    {% endif %}
+    <div class="hero-side">
+      {% for p in posts %}{% if loop.index > 1 and loop.index <= 4 %}
+      <a href="{{ p.url }}"><span class="cat">{{ p.data.category }}</span><span class="t">{{ p.data.title }}</span></a>
+      {% endif %}{% endfor %}
+    </div>
+  </section>
+
+  <div class="section-head"><h2>Latest guides</h2></div>
+  <div class="guide-grid">
+    {% for p in posts %}{% if loop.index > 4 and loop.index <= 12 %}
+    <a class="guide-card" href="{{ p.url }}">
+      <span class="cat">{{ p.data.category }}</span>
+      <span class="t">{{ p.data.title }}</span>
+      <span class="d">{{ p.data.standfirst }}</span>
+      <span class="m">{{ p.data.author.name }} · {{ (p.data.dateModified or p.data.datePublished) | readableDate }}</span>
+    </a>
+    {% endif %}{% endfor %}
+  </div>
+
+  <div class="section-head"><h2>Most read</h2></div>
+  <ol class="trending">
+    {% for p in posts %}{% if loop.index <= 5 %}
+    <li><a href="{{ p.url }}"><span><span class="cat">{{ p.data.category }}</span><span class="t">{{ p.data.title }}</span></span></a></li>
+    {% endif %}{% endfor %}
+  </ol>
+
+  {% for cat in site.categories %}
+  {% set inCat = [] %}
+  <div class="section-head">
+    <h2>{{ cat.name }}</h2>
+    <a href="/{{ cat.slug }}/">See all →</a>
+  </div>
+  <div class="guide-grid">
+    {% set shown = 0 %}
+    {% for p in posts %}
+      {% if p.data.categorySlug == cat.slug and shown < 4 %}
+      {% set shown = shown + 1 %}
+      <a class="guide-card" href="{{ p.url }}">
+        <span class="cat">{{ p.data.category }}</span>
+        <span class="t">{{ p.data.title }}</span>
+        <span class="d">{{ p.data.standfirst }}</span>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+
+  <div class="section-head"><h2>Browse by destination</h2></div>
+  <div class="cat-grid">
+    {% for cat in site.categories %}
+    {% set count = 0 %}{%- for p in posts -%}{% if p.data.categorySlug == cat.slug %}{% set count = count + 1 %}{% endif %}{%- endfor -%}
+    <a class="cat-card" href="/{{ cat.slug }}/">
+      <span class="cat-name">{{ cat.name }} <span class="cat-count">{{ count }}</span></span>
+      <span class="cat-desc">{{ cat.description }}</span>
+    </a>
+    {% endfor %}
+  </div>
+
+</main>
+</div>

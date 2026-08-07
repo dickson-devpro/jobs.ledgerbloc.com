@@ -1,0 +1,54 @@
+---
+layout: base.njk
+pagination:
+  data: site.categories
+  size: 1
+  alias: cat
+permalink: "/{{ cat.slug }}/"
+pageType: category
+eleventyComputed:
+  title: "{{ cat.name }}"
+  description: "{{ cat.description }}"
+---
+{% import "partials/jobcta.njk" as cta %}
+<div class="page page--single">
+<main class="home">
+  <section class="hero" style="grid-template-columns:minmax(0,1fr)">
+    <div class="hero-lead">
+      <span class="cat">Destination</span>
+      <h1>{{ cat.name }}</h1>
+      <p>{{ cat.description }}</p>
+    </div>
+  </section>
+
+  {% if cat.jobKeyword %}
+  {{ cta.primary(cat.jobKeyword, cat.country, null,
+      "Live " + cat.name + " openings right now",
+      "Opens a live Indeed search for sponsorship-friendly roles, filtered to the last 7 days.") }}
+  {% endif %}
+
+  <div class="section-head"><h2>All {{ cat.name }} guides</h2></div>
+  <div class="guide-grid">
+    {% for p in collections.articles %}
+      {% if p.data.categorySlug == cat.slug %}
+      <a class="guide-card" href="{{ p.url }}">
+        <span class="cat">{{ p.data.category }}</span>
+        <span class="t">{{ p.data.title }}</span>
+        <span class="d">{{ p.data.standfirst }}</span>
+        <span class="m">{{ p.data.author.name }} · {{ (p.data.dateModified or p.data.datePublished) | readableDate }}</span>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="section-head"><h2>Other destinations</h2></div>
+  <div class="cat-grid">
+    {% for c in site.categories %}{% if c.slug != cat.slug %}
+    <a class="cat-card" href="/{{ c.slug }}/">
+      <span class="cat-name">{{ c.name }}</span>
+      <span class="cat-desc">{{ c.description }}</span>
+    </a>
+    {% endif %}{% endfor %}
+  </div>
+</main>
+</div>

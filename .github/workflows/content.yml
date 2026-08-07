@@ -1,0 +1,59 @@
+name: Content pipeline
+
+on:
+  schedule:
+    - cron: "0 6 * * 1,4"    # Mon & Thu 06:00 UTC — 2 new guides a week
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "What to run"
+        type: choice
+        options: [generate, refresh, both]
+        default: generate
+      count:
+        description: "How many new guides to generate"
+        default: "1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-pipeline
+  cancel-in-progress: false
+
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Sync with remote (/admin commits here too)
+        run: |
+          git config user.name "content-bot"
+          git config user.email "content-bot@users.noreply.github.com"
+          git pull --no-rebase --no-edit || true
+
+      - name: Generate guide(s) from the job × country matrix
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'generate' || inputs.task == 'both' }}
+        run: node scripts/generate-job-article.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          COUNT: ${{ github.event_name == 'schedule' && '1' || inputs.count }}
+
+      - name: Refresh an existing guide
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'refresh' || inputs.task == 'both' }}
+        run: node scripts/refresh-article.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit & push
+        run: |
+          git add -A
+          git diff --staged --quiet || git commit -m "content: automated update $(date -u +%Y-%m-%d)"
+          git push

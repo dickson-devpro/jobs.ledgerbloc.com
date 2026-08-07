@@ -1,0 +1,123 @@
+{
+  "name": "Ledger Jobs",
+  "url": "https://jobs.ledgerbloc.com",
+  "tagline": "Visa sponsorship jobs, explained properly",
+  "logoHtml": "Ledger <em>Jobs</em>",
+  "logoUrl": "https://jobs.ledgerbloc.com/assets/logo.png",
+  "year": "2026",
+  "categories": [
+    {
+      "name": "USA",
+      "slug": "usa",
+      "country": "usa",
+      "jobKeyword": "visa sponsorship",
+      "description": "H-1B, EB-3 and employer-sponsored roles in the United States — who sponsors, what they pay, and how to apply."
+    },
+    {
+      "name": "Canada",
+      "slug": "canada",
+      "country": "canada",
+      "jobKeyword": "LMIA visa sponsorship",
+      "description": "LMIA-backed and express-entry-friendly jobs across Canada, from skilled trades to healthcare."
+    },
+    {
+      "name": "UK & Ireland",
+      "slug": "uk",
+      "country": "uk",
+      "jobKeyword": "visa sponsorship",
+      "description": "Skilled Worker visa roles with licensed sponsors in the UK and Ireland."
+    },
+    {
+      "name": "Europe",
+      "slug": "europe",
+      "country": "germany",
+      "jobKeyword": "visa sponsorship english speaking",
+      "description": "EU Blue Card and sponsorship roles in Germany, the Netherlands, France and beyond."
+    },
+    {
+      "name": "Australia & NZ",
+      "slug": "australia",
+      "country": "australia",
+      "jobKeyword": "482 visa sponsorship",
+      "description": "482 and skilled-migration roles across Australia and New Zealand."
+    },
+    {
+      "name": "Gulf & Middle East",
+      "slug": "gulf",
+      "country": "uae",
+      "jobKeyword": "visa sponsorship",
+      "description": "Employer-sponsored contracts in the UAE, Qatar and the wider Gulf."
+    }
+  ],
+  "footerLinks": [
+    {
+      "name": "Privacy Policy",
+      "url": "/privacy/"
+    },
+    {
+      "name": "Terms & Conditions",
+      "url": "/terms/"
+    },
+    {
+      "name": "About Us",
+      "url": "/about/"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact/"
+    }
+  ],
+  "disclosureText": "This guide is general information, not legal, immigration, or recruitment advice. We are not a recruiter or an employer: we do not offer jobs, take applications, or sponsor visas. Salary figures are indicative and vary by employer, location and experience. Job links open live searches on Indeed — always check each listing's own wording for sponsorship, apply through the employer's official channel, and never pay anyone who guarantees a job or a visa.",
+  "adsTxt": "# Add your ad network line, e.g.\n# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0",
+  "adBlocks": [
+    {
+      "name": "1. Analytics & site tags",
+      "enabled": false,
+      "position": "head",
+      "pages": "all",
+      "devices": "all",
+      "code": "<!-- Google tag, Search Console, consent -->"
+    },
+    {
+      "name": "2. Ad network library",
+      "enabled": false,
+      "position": "head",
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- GPT loader + init, articles only -->"
+    },
+    {
+      "name": "3. Display — above title",
+      "enabled": false,
+      "position": "before-title",
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- top display unit -->"
+    },
+    {
+      "name": "4. Display — after title",
+      "enabled": false,
+      "position": "after-title",
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- flush under headline -->"
+    },
+    {
+      "name": "5. Display — mid article",
+      "enabled": false,
+      "position": "after-paragraph",
+      "paragraph": 6,
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- after paragraph 6 -->"
+    },
+    {
+      "name": "6. Footer scripts",
+      "enabled": false,
+      "position": "footer",
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- anchor / rewarded gate -->"
+    }
+  ]
+}

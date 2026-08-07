@@ -1,0 +1,39 @@
+---
+layout: base.njk
+permalink: /status/
+title: Content Status
+description: "Internal — job × country matrix coverage."
+noAds: true
+pageType: status
+eleventyExcludeFromCollections: true
+---
+{% set matrix = pipeline.jobMatrix %}
+<div class="page page--single">
+<main class="home">
+  <section class="hero" style="grid-template-columns:minmax(0,1fr)">
+    <div class="hero-lead">
+      <span class="cat">Internal</span>
+      <h1>Matrix coverage</h1>
+      <p>{{ collections.articles.length }} guides published. The pipeline walks this grid and writes the next uncovered pair.</p>
+    </div>
+  </section>
+
+  {% for c in matrix.countries %}
+  <div class="section-head"><h2>{{ c.name }}</h2></div>
+  <div class="article-body">
+    <ul>
+      {% for j in matrix.jobs %}
+      {% set hit = null %}
+      {%- for p in collections.articles -%}
+        {% if p.data.jobKeywordBase == j and p.data.country == c.country %}{% set hit = p %}{% endif %}
+      {%- endfor -%}
+      <li>
+        {% if hit %}✅ <strong>{{ j }}</strong> — <a href="{{ hit.url }}">{{ hit.data.title }}</a>
+        {% else %}⬜ {{ j }} <em>(queued)</em>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</main>
+</div>

@@ -1,0 +1,30 @@
+{% macro primary(jobKeyword, country, location, label, note) %}
+{% set url = jobKeyword | indeedUrl(country, location) %}
+<aside class="job-cta">
+  <span class="job-cta-eyebrow">Live openings</span>
+  <p class="job-cta-title">{{ label or ("See current " + jobKeyword + " roles in " + (country | countryLabel)) }}</p>
+  <p class="job-cta-note">{{ note or "Opens a live Indeed search filtered to the last 7 days, newest first. Listings update continuously — we don't hold a copy." }}</p>
+  <a class="job-cta-btn" href="{{ url }}" target="_blank" rel="nofollow sponsored noopener">
+    Search {{ jobKeyword }} jobs on Indeed
+  </a>
+  <span class="job-cta-fine">You apply directly with the employer. We are not a recruiter and never charge for job access.</span>
+</aside>
+{% endmacro %}
+
+{% macro inline(jobKeyword, country, location, text) %}
+{% set url = jobKeyword | indeedUrl(country, location) %}
+<p class="job-inline"><a href="{{ url }}" target="_blank" rel="nofollow sponsored noopener">{{ text or ("Browse live " + jobKeyword + " openings in " + (country | countryLabel) + " →") }}</a></p>
+{% endmacro %}
+
+{% macro reads(items, heading) %}
+{% if items and items.length %}
+<aside class="next-reads">
+  <span class="next-reads-head">{{ heading or "Keep reading" }}</span>
+  <ul>
+    {% for p in items %}
+    <li><a href="{{ p.url }}"><span class="nr-cat">{{ p.data.category }}</span>{{ p.data.title }}</a></li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}
+{% endmacro %}

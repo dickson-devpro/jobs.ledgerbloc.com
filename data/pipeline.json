@@ -1,0 +1,161 @@
+{
+  "model": "claude-sonnet-4-6",
+  "minWords": 1800,
+  "maxNewArticlesPerRun": 1,
+  "maxRefreshesPerRun": 1,
+  "refreshAfterDays": 4,
+  "author": {
+    "name": "K. Bello",
+    "slug": "k-bello",
+    "initials": "KB",
+    "jobTitle": "Jobs Editor",
+    "bio": "Covers visa-sponsored work abroad — which employers sponsor, what roles pay, and what each visa route actually requires. Guides are checked against current government and employer sources and refreshed as rules change."
+  },
+  "clusters": [
+    {
+      "category": "USA",
+      "categorySlug": "usa",
+      "country": "usa",
+      "keywords": [
+        "registered nurse jobs in USA with visa sponsorship",
+        "care assistant jobs in USA with visa sponsorship",
+        "truck driver jobs in USA with visa sponsorship",
+        "warehouse operative jobs in USA with visa sponsorship",
+        "welder jobs in USA with visa sponsorship",
+        "electrician jobs in USA with visa sponsorship",
+        "chef jobs in USA with visa sponsorship",
+        "farm worker jobs in USA with visa sponsorship"
+      ]
+    },
+    {
+      "category": "Canada",
+      "categorySlug": "canada",
+      "country": "canada",
+      "keywords": [
+        "registered nurse jobs in Canada with visa sponsorship",
+        "care assistant jobs in Canada with visa sponsorship",
+        "truck driver jobs in Canada with visa sponsorship",
+        "warehouse operative jobs in Canada with visa sponsorship",
+        "welder jobs in Canada with visa sponsorship",
+        "electrician jobs in Canada with visa sponsorship",
+        "chef jobs in Canada with visa sponsorship",
+        "farm worker jobs in Canada with visa sponsorship"
+      ]
+    },
+    {
+      "category": "UK & Ireland",
+      "categorySlug": "uk",
+      "country": "uk",
+      "keywords": [
+        "registered nurse jobs in UK & Ireland with visa sponsorship",
+        "care assistant jobs in UK & Ireland with visa sponsorship",
+        "truck driver jobs in UK & Ireland with visa sponsorship",
+        "warehouse operative jobs in UK & Ireland with visa sponsorship",
+        "welder jobs in UK & Ireland with visa sponsorship",
+        "electrician jobs in UK & Ireland with visa sponsorship",
+        "chef jobs in UK & Ireland with visa sponsorship",
+        "farm worker jobs in UK & Ireland with visa sponsorship"
+      ]
+    },
+    {
+      "category": "Europe",
+      "categorySlug": "europe",
+      "country": "germany",
+      "keywords": [
+        "registered nurse jobs in Europe with visa sponsorship",
+        "care assistant jobs in Europe with visa sponsorship",
+        "truck driver jobs in Europe with visa sponsorship",
+        "warehouse operative jobs in Europe with visa sponsorship",
+        "welder jobs in Europe with visa sponsorship",
+        "electrician jobs in Europe with visa sponsorship",
+        "chef jobs in Europe with visa sponsorship",
+        "farm worker jobs in Europe with visa sponsorship"
+      ]
+    },
+    {
+      "category": "Australia & NZ",
+      "categorySlug": "australia",
+      "country": "australia",
+      "keywords": [
+        "registered nurse jobs in Australia & NZ with visa sponsorship",
+        "care assistant jobs in Australia & NZ with visa sponsorship",
+        "truck driver jobs in Australia & NZ with visa sponsorship",
+        "warehouse operative jobs in Australia & NZ with visa sponsorship",
+        "welder jobs in Australia & NZ with visa sponsorship",
+        "electrician jobs in Australia & NZ with visa sponsorship",
+        "chef jobs in Australia & NZ with visa sponsorship",
+        "farm worker jobs in Australia & NZ with visa sponsorship"
+      ]
+    },
+    {
+      "category": "Gulf & Middle East",
+      "categorySlug": "gulf",
+      "country": "uae",
+      "keywords": [
+        "registered nurse jobs in Gulf & Middle East with visa sponsorship",
+        "care assistant jobs in Gulf & Middle East with visa sponsorship",
+        "truck driver jobs in Gulf & Middle East with visa sponsorship",
+        "warehouse operative jobs in Gulf & Middle East with visa sponsorship",
+        "welder jobs in Gulf & Middle East with visa sponsorship",
+        "electrician jobs in Gulf & Middle East with visa sponsorship",
+        "chef jobs in Gulf & Middle East with visa sponsorship",
+        "farm worker jobs in Gulf & Middle East with visa sponsorship"
+      ]
+    }
+  ],
+  "refreshOlderThanDays": 45,
+  "jobMatrix": {
+    "jobs": [
+      "registered nurse",
+      "care assistant",
+      "truck driver",
+      "warehouse operative",
+      "welder",
+      "electrician",
+      "chef",
+      "farm worker",
+      "cleaner",
+      "construction labourer",
+      "software engineer",
+      "civil engineer",
+      "accountant",
+      "teacher",
+      "mechanic",
+      "security guard",
+      "hotel housekeeper",
+      "forklift driver"
+    ],
+    "countries": [
+      {
+        "slug": "usa",
+        "name": "USA",
+        "country": "usa"
+      },
+      {
+        "slug": "canada",
+        "name": "Canada",
+        "country": "canada"
+      },
+      {
+        "slug": "uk",
+        "name": "UK & Ireland",
+        "country": "uk"
+      },
+      {
+        "slug": "europe",
+        "name": "Europe",
+        "country": "germany"
+      },
+      {
+        "slug": "australia",
+        "name": "Australia & NZ",
+        "country": "australia"
+      },
+      {
+        "slug": "gulf",
+        "name": "Gulf & Middle East",
+        "country": "uae"
+      }
+    ]
+  }
+}
