@@ -22,20 +22,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("slugify", slugify);
 
   /* -- Indeed search URLs: evergreen, country-aware, always fresh -- */
-  const INDEED_DOMAIN = {
-    usa: "www.indeed.com",
-    canada: "ca.indeed.com",
-    uk: "uk.indeed.com",
-    ireland: "ie.indeed.com",
-    germany: "de.indeed.com",
-    netherlands: "nl.indeed.com",
-    france: "fr.indeed.com",
-    australia: "au.indeed.com",
-    "new-zealand": "nz.indeed.com",
-    uae: "ae.indeed.com",
-    qatar: "qa.indeed.com",
-    singapore: "sg.indeed.com"
-  };
+  // Domain map comes from data/indeed-countries.json so the pipeline can add
+  // destinations on its own without anyone editing this file.
+  const INDEED_DOMAIN = (() => {
+    try {
+      const cat = JSON.parse(require("node:fs").readFileSync("data/indeed-countries.json", "utf8"));
+      return Object.fromEntries(cat.countries.map((c) => [c.slug, c.domain]));
+    } catch (e) {
+      return { usa: "www.indeed.com" };
+    }
+  })();
+
 
   eleventyConfig.addFilter("indeedUrl", (keyword, country, location) => {
     const host = INDEED_DOMAIN[String(country || "").toLowerCase()] || "www.indeed.com";

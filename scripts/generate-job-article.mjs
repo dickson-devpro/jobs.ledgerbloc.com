@@ -85,18 +85,33 @@ function coveredPairs(existing) {
   return set;
 }
 
-function pickPair(existing, skip) {
+/* All pairs still to write. */
+function uncoveredPairs(existing, skip) {
   const matrix = CONFIG.jobMatrix;
   if (!matrix) throw new Error("data/pipeline.json is missing jobMatrix");
   const covered = coveredPairs(existing);
+  const out = [];
   for (const country of matrix.countries) {
     for (const job of matrix.jobs) {
       const key = `${job.toLowerCase()}::${country.country.toLowerCase()}`;
       if (covered.has(key) || skip.has(key)) continue;
-      return { job, country, key };
+      out.push({ job, country, key });
     }
   }
-  return null;
+  return out;
+}
+
+/* Pick at random rather than marching through the grid in order.
+   Sequential picking would publish every USA guide first, then every Canada
+   guide — the site would look lopsided for months and early articles would have
+   nothing relevant to link to. Random spreads coverage across all destinations
+   from day one, so internal linking works immediately.
+   Set "matrixOrder": "sequential" in data/pipeline.json to go back to in-order. */
+function pickPair(existing, skip) {
+  const pool = uncoveredPairs(existing, skip);
+  if (!pool.length) return null;
+  if (String(CONFIG.matrixOrder || "random").toLowerCase() === "sequential") return pool[0];
+  return pool[Math.floor(Math.random() * pool.length)];
 }
 
 function titleCase(s) {

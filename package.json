@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "check": "node scripts/check-similarity.mjs",
+    "generate": "node scripts/generate-job-article.mjs",
+    "expand": "node scripts/expand-matrix.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"

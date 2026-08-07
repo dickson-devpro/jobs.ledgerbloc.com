@@ -1,0 +1,30 @@
+{
+  "_comment": "Catalogue of every destination the pipeline may activate. The expander picks from here only, so an Indeed domain can never be invented. 'active' entries live in pipeline.json jobMatrix.countries.",
+  "countries": [
+    { "slug": "usa",         "name": "USA",                "domain": "www.indeed.com", "query": "visa sponsorship",  "description": "H-1B, EB-3 and employer-sponsored roles in the United States — who sponsors, what they pay, and how to apply." },
+    { "slug": "canada",      "name": "Canada",             "domain": "ca.indeed.com",  "query": "LMIA",              "description": "LMIA-backed and Express Entry-friendly jobs across Canada, from skilled trades to healthcare." },
+    { "slug": "uk",          "name": "UK & Ireland",       "domain": "uk.indeed.com",  "query": "visa sponsorship",  "description": "Skilled Worker visa roles with licensed sponsors in the UK and Ireland." },
+    { "slug": "europe",      "name": "Europe",             "domain": "de.indeed.com",  "query": "english speaking",  "description": "EU Blue Card and sponsorship roles in Germany, the Netherlands, France and beyond." },
+    { "slug": "australia",   "name": "Australia & NZ",     "domain": "au.indeed.com",  "query": "visa sponsorship",  "description": "482 and skilled-migration roles across Australia and New Zealand." },
+    { "slug": "gulf",        "name": "Gulf & Middle East", "domain": "ae.indeed.com",  "query": "visa sponsorship",  "description": "Employer-sponsored contracts in the UAE, Qatar and the wider Gulf." },
+
+    { "slug": "ireland",     "name": "Ireland",            "domain": "ie.indeed.com",  "query": "visa sponsorship",  "description": "Critical Skills and General Employment Permit roles across Ireland." },
+    { "slug": "netherlands", "name": "Netherlands",        "domain": "nl.indeed.com",  "query": "english speaking",  "description": "Highly Skilled Migrant roles with IND-recognised sponsors in the Netherlands." },
+    { "slug": "germany",     "name": "Germany",            "domain": "de.indeed.com",  "query": "english speaking",  "description": "EU Blue Card, Skilled Worker and Opportunity Card routes into Germany." },
+    { "slug": "new-zealand", "name": "New Zealand",        "domain": "nz.indeed.com",  "query": "visa sponsorship",  "description": "Accredited Employer Work Visa roles across New Zealand." },
+    { "slug": "singapore",   "name": "Singapore",          "domain": "sg.indeed.com",  "query": "employment pass",   "description": "Employment Pass and S Pass roles in Singapore." },
+    { "slug": "qatar",       "name": "Qatar",              "domain": "qa.indeed.com",  "query": "visa sponsorship",  "description": "Employer-sponsored contracts across Qatar's healthcare, construction and energy sectors." },
+    { "slug": "saudi",       "name": "Saudi Arabia",       "domain": "sa.indeed.com",  "query": "visa sponsorship",  "description": "Sponsored roles across Saudi Arabia's expanding healthcare, engineering and hospitality sectors." },
+    { "slug": "belgium",     "name": "Belgium",            "domain": "be.indeed.com",  "query": "english speaking",  "description": "Single Permit and EU Blue Card routes into Belgium." },
+    { "slug": "sweden",      "name": "Sweden",             "domain": "se.indeed.com",  "query": "english speaking",  "description": "Work permit roles with certified employers across Sweden." },
+    { "slug": "denmark",     "name": "Denmark",            "domain": "dk.indeed.com",  "query": "english speaking",  "description": "Positive List and Pay Limit scheme roles in Denmark." },
+    { "slug": "norway",      "name": "Norway",             "domain": "no.indeed.com",  "query": "english speaking",  "description": "Skilled worker residence permit roles across Norway." },
+    { "slug": "spain",       "name": "Spain",              "domain": "es.indeed.com",  "query": "english speaking",  "description": "Work authorisation and shortage-occupation roles in Spain." },
+    { "slug": "portugal",    "name": "Portugal",           "domain": "pt.indeed.com",  "query": "english speaking",  "description": "Work visa and job-seeker routes into Portugal." },
+    { "slug": "poland",      "name": "Poland",             "domain": "pl.indeed.com",  "query": "english speaking",  "description": "Work permit roles across Poland's manufacturing, logistics and IT sectors." },
+    { "slug": "switzerland", "name": "Switzerland",        "domain": "ch.indeed.com",  "query": "english speaking",  "description": "Quota-based work permit roles in Switzerland." },
+    { "slug": "austria",     "name": "Austria",            "domain": "at.indeed.com",  "query": "english speaking",  "description": "Red-White-Red Card routes into Austria." },
+    { "slug": "japan",       "name": "Japan",              "domain": "jp.indeed.com",  "query": "english speaking",  "description": "Specified Skilled Worker and engineer/specialist visa roles in Japan." },
+    { "slug": "south-africa","name": "South Africa",       "domain": "za.indeed.com",  "query": "visa sponsorship",  "description": "Critical Skills and General Work Visa roles across South Africa." }
+  ]
+}

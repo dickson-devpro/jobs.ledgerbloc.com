@@ -2,16 +2,11 @@ name: Content pipeline
 
 on:
   schedule:
-    - cron: "0 6 * * 1,4"    # Mon & Thu 06:00 UTC — 2 new guides a week
+    - cron: "0 6 * * 1,4"     # Mon & Thu 06:00 UTC
   workflow_dispatch:
     inputs:
-      task:
-        description: "What to run"
-        type: choice
-        options: [generate, refresh, both]
-        default: generate
       count:
-        description: "How many new guides to generate"
+        description: "How many guides to publish this run"
         default: "1"
 
 permissions:
@@ -24,6 +19,7 @@ concurrency:
 jobs:
   content:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -33,24 +29,35 @@ jobs:
       - name: Install dependencies
         run: npm ci || npm install
 
-      - name: Sync with remote (/admin commits here too)
+      - name: Sync with remote
         run: |
           git config user.name "content-bot"
           git config user.email "content-bot@users.noreply.github.com"
           git pull --no-rebase --no-edit || true
 
-      - name: Generate guide(s) from the job × country matrix
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'generate' || inputs.task == 'both' }}
+      # Tops up job titles and activates new destinations when the pool runs low.
+      # Writes pipeline.json and site.json itself — no manual editing, ever.
+      - name: Expand the matrix if it is running low
+        run: node scripts/expand-matrix.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MIN_POOL: "25"
+
+      - name: Publish guide(s)
         run: node scripts/generate-job-article.mjs
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          COUNT: ${{ github.event_name == 'schedule' && '1' || inputs.count }}
+          COUNT: ${{ github.event_name == 'schedule' && '2' || inputs.count }}
 
-      - name: Refresh an existing guide
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'refresh' || inputs.task == 'both' }}
+      - name: Refresh an older guide
+        if: ${{ github.event_name == 'schedule' }}
         run: node scripts/refresh-article.mjs
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Duplicate check (report only)
+        if: ${{ always() }}
+        run: node scripts/check-similarity.mjs || true
 
       - name: Commit & push
         run: |
