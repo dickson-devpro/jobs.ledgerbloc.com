@@ -62,6 +62,19 @@ module.exports = function (eleventyConfig) {
     return map[String(slug || "").toLowerCase()] || "abroad";
   });
 
+  // Insert a block of HTML after the Nth </p> of the rendered body.
+  // Used to place the related-guides block mid-article for internal navigation.
+  eleventyConfig.addFilter("injectAfterParagraph", (content, html, n) => {
+    if (!html) return content;
+    const target = Math.max(1, parseInt(n, 10) || 5);
+    let count = 0, done = false;
+    return String(content).replace(/<\/p>/g, (m) => {
+      count++;
+      if (!done && count === target) { done = true; return m + html; }
+      return m;
+    });
+  });
+
   eleventyConfig.addFilter("relatedJobs", (articles, current, n) => {
     const limit = n || 3;
     const cur = current || {};

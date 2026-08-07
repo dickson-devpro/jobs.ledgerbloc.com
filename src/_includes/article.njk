@@ -22,8 +22,6 @@
 
     <p class="standfirst">{{ standfirst }}</p>
 
-    {% if jobKeyword %}{{ cta.primary(searchKeyword or jobKeywordBase or jobKeyword, country, location) }}{% endif %}
-
     <div class="byline">
       <span class="avatar" aria-hidden="true">{{ author.initials }}</span>
       <span>By <b>{{ author.name }}</b>, {{ author.jobTitle }} ·
@@ -55,8 +53,10 @@
     </nav>
     {% endif %}
 
+    {% set relatedHtml %}{{ cta.reads(collections.articles | relatedJobs(page, 4), "Related guides") }}{% endset %}
+
     <div class="article-body">
-      {{ content | injectAds(site.adBlocks, pageType) | safe }}
+      {{ content | injectAds(site.adBlocks, pageType) | injectAfterParagraph(relatedHtml, relatedAfterParagraph or 5) | safe }}
     </div>
 
     {% if jobKeyword %}
@@ -64,8 +64,6 @@
         "Ready to apply for " + (jobKeywordBase or jobKeyword) + " jobs in " + (country | countryLabel) + "?",
         "This search is filtered to roles posted in the last 7 days. Check each listing's own wording for sponsorship — employers state it in the ad.") }}
     {% endif %}
-
-    {{ cta.reads(collections.articles | relatedJobs(page, 4), "Other guides you may need") }}
 
     {{ ads.render(site.adBlocks, "end-of-article", pageType, noAds) }}
 

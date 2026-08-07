@@ -92,8 +92,9 @@ h1{font-size:clamp(1.8rem,4.2vw,2.55rem);margin:12px 0 15px}
 .job-inline{margin:0 0 20px}
 .job-inline a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
 
-/* Next reads */
-.next-reads{margin:30px 0 0;padding:20px 22px;background:var(--wash);border-radius:14px}
+/* Next reads — sits mid-article as a reading break */
+.next-reads{margin:32px 0;padding:20px 22px;background:var(--wash);border-radius:14px;border-left:3px solid var(--accent)}
+.article-body .next-reads{margin:34px 0}
 .next-reads-head{display:block;font-size:.65rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
 .next-reads ul{list-style:none}
 .next-reads li{border-bottom:1px solid var(--line-soft)}
