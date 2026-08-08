@@ -1,7 +1,7 @@
 # Sveltia CMS configuration — token-based sign-in (no OAuth worker)
 backend:
   name: github
-  repo: dickson-devpro/jobs,ledgerbloc.com
+  repo: dickson-devpro/jobs.ledgerbloc.com
   branch: main
 
 media_folder: src/assets/uploads
