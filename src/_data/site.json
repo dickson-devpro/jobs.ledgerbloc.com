@@ -5,6 +5,62 @@
   "logoHtml": "Ledger <em>Jobs</em>",
   "logoUrl": "https://jobs.ledgerbloc.com/assets/logo.png",
   "year": "2026",
+  "adBlocks": [
+    {
+      "name": "1. Analytics & site tags",
+      "enabled": false,
+      "position": "head",
+      "paragraph": null,
+      "pages": "all",
+      "devices": "all",
+      "code": "<!-- Google tag, Search Console, consent -->"
+    },
+    {
+      "name": "2. Ad network library",
+      "enabled": false,
+      "position": "head",
+      "paragraph": null,
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- GPT loader + init, articles only -->"
+    },
+    {
+      "name": "3. Display — above title",
+      "enabled": false,
+      "position": "before-title",
+      "paragraph": null,
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- top display unit -->"
+    },
+    {
+      "name": "4. Display — after title",
+      "enabled": false,
+      "position": "after-title",
+      "paragraph": null,
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- flush under headline -->"
+    },
+    {
+      "name": "5. Display — mid article",
+      "enabled": false,
+      "position": "after-paragraph",
+      "paragraph": 6,
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- after paragraph 6 -->"
+    },
+    {
+      "name": "6. Footer scripts",
+      "enabled": false,
+      "position": "footer",
+      "paragraph": null,
+      "pages": "article",
+      "devices": "all",
+      "code": "<!-- anchor / rewarded gate -->"
+    }
+  ],
   "categories": [
     {
       "name": "USA",
@@ -67,57 +123,6 @@
       "url": "/contact/"
     }
   ],
-  "disclosureText": "This guide is general information, not legal, immigration, or recruitment advice. We are not a recruiter or an employer: we do not offer jobs, take applications, or sponsor visas. Salary figures are indicative and vary by employer, location and experience. Job links open live searches on Indeed — always check each listing's own wording for sponsorship, apply through the employer's official channel, and never pay anyone who guarantees a job or a visa.",
-  "adsTxt": "# Add your ad network line, e.g.\n# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0",
-  "adBlocks": [
-    {
-      "name": "1. Analytics & site tags",
-      "enabled": false,
-      "position": "head",
-      "pages": "all",
-      "devices": "all",
-      "code": "<!-- Google tag, Search Console, consent -->"
-    },
-    {
-      "name": "2. Ad network library",
-      "enabled": false,
-      "position": "head",
-      "pages": "article",
-      "devices": "all",
-      "code": "<!-- GPT loader + init, articles only -->"
-    },
-    {
-      "name": "3. Display — above title",
-      "enabled": false,
-      "position": "before-title",
-      "pages": "article",
-      "devices": "all",
-      "code": "<!-- top display unit -->"
-    },
-    {
-      "name": "4. Display — after title",
-      "enabled": false,
-      "position": "after-title",
-      "pages": "article",
-      "devices": "all",
-      "code": "<!-- flush under headline -->"
-    },
-    {
-      "name": "5. Display — mid article",
-      "enabled": false,
-      "position": "after-paragraph",
-      "paragraph": 6,
-      "pages": "article",
-      "devices": "all",
-      "code": "<!-- after paragraph 6 -->"
-    },
-    {
-      "name": "6. Footer scripts",
-      "enabled": false,
-      "position": "footer",
-      "pages": "article",
-      "devices": "all",
-      "code": "<!-- anchor / rewarded gate -->"
-    }
-  ]
+  "adsTxt": "google.com, pub-3838301720679427, DIRECT, f08c47fec0942fa0",
+  "disclosureText": "This guide is general information, not legal, immigration, or recruitment advice. We are not a recruiter or an employer: we do not offer jobs, take applications, or sponsor visas. Salary figures are indicative and vary by employer, location and experience. Job links open live searches on Indeed — always check each listing's own wording for sponsorship, apply through the employer's official channel, and never pay anyone who guarantees a job or a visa."
 }
