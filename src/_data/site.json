@@ -85,6 +85,18 @@
       "country": "uae",
       "jobKeyword": "visa sponsorship",
       "description": "Employer-sponsored contracts in the UAE, Qatar and the wider Gulf."
+    },
+    {
+      "name": "For Employers",
+      "slug": "employers"
+    },
+    {
+      "name": "Sponsorship Guide",
+      "slug": "sponsorship"
+    },
+    {
+      "name": "Moving & Cover",
+      "slug": "moving"
     }
   ],
   "footerLinks": [
