@@ -1,6 +1,6 @@
 {
   "model": "claude-sonnet-4-6",
-  "minWords": 1800,
+  "minWords": 2200,
   "maxNewArticlesPerRun": 1,
   "maxRefreshesPerRun": 1,
   "refreshAfterDays": 4,
@@ -13,93 +13,51 @@
   },
   "clusters": [
     {
-      "category": "USA",
-      "categorySlug": "usa",
-      "country": "usa",
+      "category": "For Employers",
+      "categorySlug": "employers",
       "keywords": [
-        "registered nurse jobs in USA with visa sponsorship",
-        "care assistant jobs in USA with visa sponsorship",
-        "truck driver jobs in USA with visa sponsorship",
-        "warehouse operative jobs in USA with visa sponsorship",
-        "welder jobs in USA with visa sponsorship",
-        "electrician jobs in USA with visa sponsorship",
-        "chef jobs in USA with visa sponsorship",
-        "farm worker jobs in USA with visa sponsorship"
+        "how to apply for a UK skilled worker sponsor licence",
+        "UK sponsor licence cost and fees breakdown",
+        "sponsor licence application documents checklist",
+        "how long a sponsor licence application takes",
+        "Certificate of Sponsorship explained for employers",
+        "sponsor licence compliance duties after approval",
+        "why sponsor licence applications get refused",
+        "how to sponsor an employee for a work visa step by step",
+        "hiring international workers employer obligations",
+        "how to check if a company holds a sponsor licence",
+        "sponsor licence renewal and reporting changes",
+        "small business guide to sponsoring overseas staff",
+        "corporate immigration services what they do and cost",
+        "Immigration Skills Charge explained for employers",
+        "right to work checks for sponsored employees"
       ]
     },
     {
-      "category": "Canada",
-      "categorySlug": "canada",
-      "country": "canada",
+      "category": "Sponsorship Guide",
+      "categorySlug": "sponsorship",
       "keywords": [
-        "registered nurse jobs in Canada with visa sponsorship",
-        "care assistant jobs in Canada with visa sponsorship",
-        "truck driver jobs in Canada with visa sponsorship",
-        "warehouse operative jobs in Canada with visa sponsorship",
-        "welder jobs in Canada with visa sponsorship",
-        "electrician jobs in Canada with visa sponsorship",
-        "chef jobs in Canada with visa sponsorship",
-        "farm worker jobs in Canada with visa sponsorship"
+        "what visa sponsorship actually means for a job seeker",
+        "how to ask an employer about visa sponsorship",
+        "visa sponsorship application process end to end",
+        "how to find companies that sponsor work visas",
+        "software and tech firms that sponsor international hires",
+        "work permit sponsorship versus visa sponsorship difference",
+        "what to do when an employer says they cannot sponsor",
+        "sponsored job offer what to check before accepting",
+        "switching employers on a sponsored work visa",
+        "common visa sponsorship scams and how to spot them"
       ]
     },
     {
-      "category": "UK & Ireland",
-      "categorySlug": "uk",
-      "country": "uk",
+      "category": "Moving & Cover",
+      "categorySlug": "moving",
       "keywords": [
-        "registered nurse jobs in UK & Ireland with visa sponsorship",
-        "care assistant jobs in UK & Ireland with visa sponsorship",
-        "truck driver jobs in UK & Ireland with visa sponsorship",
-        "warehouse operative jobs in UK & Ireland with visa sponsorship",
-        "welder jobs in UK & Ireland with visa sponsorship",
-        "electrician jobs in UK & Ireland with visa sponsorship",
-        "chef jobs in UK & Ireland with visa sponsorship",
-        "farm worker jobs in UK & Ireland with visa sponsorship"
-      ]
-    },
-    {
-      "category": "Europe",
-      "categorySlug": "europe",
-      "country": "germany",
-      "keywords": [
-        "registered nurse jobs in Europe with visa sponsorship",
-        "care assistant jobs in Europe with visa sponsorship",
-        "truck driver jobs in Europe with visa sponsorship",
-        "warehouse operative jobs in Europe with visa sponsorship",
-        "welder jobs in Europe with visa sponsorship",
-        "electrician jobs in Europe with visa sponsorship",
-        "chef jobs in Europe with visa sponsorship",
-        "farm worker jobs in Europe with visa sponsorship"
-      ]
-    },
-    {
-      "category": "Australia & NZ",
-      "categorySlug": "australia",
-      "country": "australia",
-      "keywords": [
-        "registered nurse jobs in Australia & NZ with visa sponsorship",
-        "care assistant jobs in Australia & NZ with visa sponsorship",
-        "truck driver jobs in Australia & NZ with visa sponsorship",
-        "warehouse operative jobs in Australia & NZ with visa sponsorship",
-        "welder jobs in Australia & NZ with visa sponsorship",
-        "electrician jobs in Australia & NZ with visa sponsorship",
-        "chef jobs in Australia & NZ with visa sponsorship",
-        "farm worker jobs in Australia & NZ with visa sponsorship"
-      ]
-    },
-    {
-      "category": "Gulf & Middle East",
-      "categorySlug": "gulf",
-      "country": "uae",
-      "keywords": [
-        "registered nurse jobs in Gulf & Middle East with visa sponsorship",
-        "care assistant jobs in Gulf & Middle East with visa sponsorship",
-        "truck driver jobs in Gulf & Middle East with visa sponsorship",
-        "warehouse operative jobs in Gulf & Middle East with visa sponsorship",
-        "welder jobs in Gulf & Middle East with visa sponsorship",
-        "electrician jobs in Gulf & Middle East with visa sponsorship",
-        "chef jobs in Gulf & Middle East with visa sponsorship",
-        "farm worker jobs in Gulf & Middle East with visa sponsorship"
+        "work visa health insurance requirements by country",
+        "Immigration Health Surcharge explained",
+        "relocation costs when moving for a sponsored job",
+        "bringing dependants on a sponsored work visa",
+        "English language requirements for sponsored work visas"
       ]
     }
   ],

@@ -1,4 +1,7 @@
 // scripts/generate-article.mjs — drafts COUNT new articles from the keyword map (default 1)
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
+
 import { CONFIG, claude, splitMetaBody, slugify, wordCount, todayISO, readArticles, tocFromBody, writeArticle } from "./lib.mjs";
 
 const MIN_WORDS = CONFIG.minWords;
@@ -9,13 +12,21 @@ non-misleading, genuinely useful long-form content. Finance is a sensitive (YMYL
 statistics presented as current market data, never promise outcomes, never give individualised financial
 advice. Use worked examples labelled as illustrative. Write for search intent: answer the question early,
 then go deep.
-AUDIENCE: This publication serves foreign nationals and immigrants who are starting, funding, or running a
-business in the United States, plus those relocating for work. Frame every topic around their realities:
-no US credit history, SSN vs ITIN, treaty-country eligibility, cross-border banking, and how immigration
-status interacts with commercial decisions. STRICT BOUNDARY: this is practical business and financial
-information, NEVER immigration legal advice or tax advice — where a decision turns on visa eligibility or
-tax liability, direct readers to a licensed immigration attorney or CPA. Never predict case outcomes,
-approval odds, or policy changes.
+AUDIENCE: two connected readerships. (1) Job seekers looking for visa-sponsored work abroad, and
+(2) EMPLOYERS who want to sponsor overseas staff — HR managers and small business owners applying for a
+sponsor licence and navigating compliance. Write each guide for whichever of the two the topic serves, and
+say plainly at the top which one it is for.
+
+Name the real bodies, forms, fees and processes — Home Office, UKVI, sponsor licence, Certificate of
+Sponsorship, Immigration Skills Charge, right to work checks — so the guide reads like a practitioner wrote
+it. Frame all fees and thresholds as indicative and tell the reader which official page to verify against,
+because they change.
+
+STRICT BOUNDARY: practical information only, NEVER immigration legal advice. We are not a recruiter, an
+employer, or an immigration adviser. Where a decision turns on eligibility or compliance risk, direct the
+reader to a licensed immigration solicitor or OISC-regulated adviser. Never predict approval odds or
+outcomes. Always warn that no legitimate employer or agent charges a worker for a job or a visa.
+
 Follow the output format EXACTLY as instructed.`;
 
 const FORMAT = `Respond in EXACTLY this format (no markdown fences, nothing before or after):
@@ -30,16 +41,16 @@ const FORMAT = `Respond in EXACTLY this format (no markdown fences, nothing befo
 The full Markdown article body here (## sections, ### subsections). No H1. No FAQ section — FAQ lives in META only.`;
 
 function pickTopic(existing, skip) {
+  const { findCover } = require("./keyword-match.cjs");
+  const pool = existing.map((a) => ({
+    title: a.fm.title || "",
+    sourceKeyword: a.fm.sourceKeyword || "",
+    categorySlug: a.fm.categorySlug || ""
+  }));
   for (const cluster of CONFIG.clusters) {
     for (const keyword of cluster.keywords) {
       if (skip.has(keyword)) continue;
-      const kwWords = keyword.toLowerCase().split(" ").filter((w) => w.length > 3);
-      const needed = Math.max(2, Math.ceil(kwWords.length * 0.7));
-      const covered = existing.some((a) => {
-        const t = (a.fm.title || "").toLowerCase();
-        return kwWords.filter((w) => t.includes(w)).length >= needed;
-      });
-      if (!covered) return { cluster, keyword };
+      if (!findCover(keyword, pool)) return { cluster, keyword };
     }
   }
   return null;
@@ -119,9 +130,10 @@ ${body}`,
     description: meta.description,
     category: cluster.category,
     categorySlug: cluster.categorySlug,
-    permalink: `/${cluster.categorySlug}/${slug}/`,
+    permalink: `/${slug}/`,
     datePublished: today,
     dateModified: today,
+    sourceKeyword: keyword,
     standfirst: meta.standfirst,
     author: CONFIG.author,
     keyFigures: meta.keyFigures,
