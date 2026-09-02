@@ -1,5 +1,5 @@
 ---
-title: Jobs landing page
+title: Grant Offer
 slug: grant/
 ---
 
