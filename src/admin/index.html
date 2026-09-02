@@ -7,6 +7,85 @@
   <meta name="robots" content="noindex">
 </head>
 <body>
-  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+  <!-- No type="module": the CDN build only exposes the global CMS object this way. -->
+  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+
+  <script>
+    /* Live preview for Landing pages.
+       Renders the HTML body in an iframe and shows the page URL with copy /
+       open buttons. Uses Sveltia's globals: h (React.createElement) and createClass. */
+    (function () {
+      var tries = 0;
+      var timer = setInterval(function () {
+        if (++tries > 80) { clearInterval(timer); return; }
+        if (!window.CMS || !window.h || !window.createClass ||
+            typeof window.CMS.registerPreviewTemplate !== 'function') return;
+        clearInterval(timer);
+
+        var h = window.h;
+
+        try {
+          window.CMS.registerPreviewTemplate('landers', window.createClass({
+            getInitialState: function () { return { copied: false }; },
+            render: function () {
+              var entry = this.props.entry;
+              var body = (entry && entry.getIn(['data', 'body'])) || '';
+              var slug = String((entry && entry.getIn(['data', 'slug'])) || '')
+                           .replace(/^\/+|\/+$/g, '');
+              var url = window.location.origin + '/' + slug + '/';
+              var self = this;
+
+              var barStyle = {
+                display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap',
+                padding: '10px 12px', background: '#f3f4f6',
+                borderBottom: '1px solid #e5e7eb'
+              };
+              var urlStyle = {
+                flex: '1', minWidth: '150px', fontFamily: 'ui-monospace, Menlo, monospace',
+                fontSize: '12px', color: '#374151', background: '#fff',
+                border: '1px solid #d1d5db', borderRadius: '6px', padding: '6px 8px'
+              };
+              var btnStyle = {
+                border: 0, borderRadius: '6px', padding: '7px 12px', fontSize: '12px',
+                fontWeight: 600, cursor: 'pointer', textDecoration: 'none',
+                background: self.state.copied ? '#059669' : '#1f2937', color: '#fff'
+              };
+              var linkStyle = Object.assign({}, btnStyle, { background: '#1f2937' });
+
+              if (!body) {
+                return h('div', { style: { padding: '24px', color: '#6b7280',
+                  fontFamily: 'system-ui, sans-serif', fontSize: '13px' } },
+                  'Paste your HTML into the body field to see a live preview here.');
+              }
+
+              return h('div', { style: { fontFamily: 'system-ui, sans-serif' } },
+                h('div', { style: barStyle },
+                  h('input', { readOnly: true, value: url, style: urlStyle,
+                    onFocus: function (e) { e.target.select(); } }),
+                  h('button', {
+                    style: btnStyle,
+                    onClick: function () {
+                      navigator.clipboard.writeText(url).then(function () {
+                        self.setState({ copied: true });
+                        setTimeout(function () { self.setState({ copied: false }); }, 1500);
+                      });
+                    }
+                  }, self.state.copied ? 'Copied' : 'Copy URL'),
+                  h('a', { style: linkStyle, href: url, target: '_blank',
+                           rel: 'noopener' }, 'Open live')
+                ),
+                h('iframe', {
+                  srcDoc: body,
+                  sandbox: 'allow-same-origin',
+                  style: { width: '100%', height: 'calc(100vh - 120px)',
+                           border: 0, background: '#fff' }
+                })
+              );
+            }
+          }));
+        } catch (e) { /* preview is a nicety — never let it break the CMS */ }
+      }, 200);
+    })();
+  </script>
 </body>
 </html>
