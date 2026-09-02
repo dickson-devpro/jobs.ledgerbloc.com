@@ -13,7 +13,7 @@
       "paragraph": null,
       "pages": "all",
       "devices": "all",
-      "code": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-1MK7XSVNG3\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-1MK7XSVNG3');\n</script>\n\n<!-- Meta Pixel Code -->\n<script>\n!function(f,b,e,v,n,t,s)\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\nn.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];\ns.parentNode.insertBefore(t,s)}(window, document,'script',\n'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '4069399203193860');\nfbq('track', 'PageView');\n</script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\"\nsrc=\"https://www.facebook.com/tr?id=4069399203193860&ev=PageView&noscript=1\"\n/></noscript>\n<!-- End Meta Pixel Code -->"
+      "code": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-1MK7XSVNG3\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-1MK7XSVNG3');\n</script>"
     },
     {
       "name": "2. Ad network library",
@@ -48,43 +48,43 @@
       "name": "USA",
       "slug": "usa",
       "country": "usa",
-      "jobKeyword": "visa sponsorship",
-      "description": "H-1B, EB-3 and employer-sponsored roles in the United States — who sponsors, what they pay, and how to apply."
+      "description": "H-1B, EB-3 and employer-sponsored roles in the United States — who sponsors, what they pay, and how to apply.",
+      "jobKeyword": "visa sponsorship"
     },
     {
       "name": "Canada",
       "slug": "canada",
       "country": "canada",
-      "jobKeyword": "LMIA",
-      "description": "LMIA-backed and express-entry-friendly jobs across Canada, from skilled trades to healthcare."
+      "description": "LMIA-backed and express-entry-friendly jobs across Canada, from skilled trades to healthcare.",
+      "jobKeyword": "LMIA"
     },
     {
       "name": "UK & Ireland",
       "slug": "uk",
       "country": "uk",
-      "jobKeyword": "visa sponsorship",
-      "description": "Skilled Worker visa roles with licensed sponsors in the UK and Ireland."
+      "description": "Skilled Worker visa roles with licensed sponsors in the UK and Ireland.",
+      "jobKeyword": "visa sponsorship"
     },
     {
       "name": "Europe",
       "slug": "europe",
       "country": "germany",
-      "jobKeyword": "english speaking",
-      "description": "EU Blue Card and sponsorship roles in Germany, the Netherlands, France and beyond."
+      "description": "EU Blue Card and sponsorship roles in Germany, the Netherlands, France and beyond.",
+      "jobKeyword": "english speaking"
     },
     {
       "name": "Australia & NZ",
       "slug": "australia",
       "country": "australia",
-      "jobKeyword": "visa sponsorship",
-      "description": "482 and skilled-migration roles across Australia and New Zealand."
+      "description": "482 and skilled-migration roles across Australia and New Zealand.",
+      "jobKeyword": "visa sponsorship"
     },
     {
       "name": "Gulf & Middle East",
       "slug": "gulf",
       "country": "uae",
-      "jobKeyword": "visa sponsorship",
-      "description": "Employer-sponsored contracts in the UAE, Qatar and the wider Gulf."
+      "description": "Employer-sponsored contracts in the UAE, Qatar and the wider Gulf.",
+      "jobKeyword": "visa sponsorship"
     },
     {
       "name": "For Employers",
