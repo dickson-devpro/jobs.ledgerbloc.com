@@ -3,249 +3,48 @@ title: Grant Offer
 slug: grant/
 ---
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Congratulations</title>
+<title>Relief Support</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--green:#087443;--green-light:#eff8f3;--text:#18202c;--muted:#6b7482;--border:#e3e7eb;--bg:#f5f7f8}
+html,body{width:100%;min-height:100%}
+body{min-height:100dvh;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text)}
+button{font:inherit;-webkit-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent}
+#page{min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:14px}
+.card{width:100%;max-width:390px;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 7px 25px rgba(0,0,0,.07)}
+.header{background:var(--green);color:#fff;text-align:center;padding:22px 18px}
+.check{width:36px;height:36px;margin:0 auto 9px;border-radius:50%;background:#fff;color:var(--green);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900}
+.header h1{font-size:21px;font-weight:900;line-height:1.2}
+.header p{margin-top:5px;font-size:11px;opacity:.88}
+.content{padding:20px 17px 18px}
+.status{display:flex;align-items:center;justify-content:center;gap:7px;margin-bottom:17px;padding:8px;border-radius:7px;background:var(--green-light);color:var(--green);font-size:11px;font-weight:800}
+.status-dot{width:7px;height:7px;border-radius:50%;background:var(--green)}
+.title{text-align:center;font-size:22px;font-weight:900;line-height:1.2;margin-bottom:6px}
+.subtitle{text-align:center;color:var(--muted);font-size:12px;line-height:1.4;margin-bottom:18px}
+.relief-options{display:grid;gap:9px}
+.relief-option{width:100%;min-height:64px;display:flex;align-items:center;gap:12px;padding:11px 13px;border:1.5px solid var(--border);border-radius:10px;background:#fff;color:var(--text);text-align:left;cursor:pointer;transition:.15s ease}
+.relief-option:hover{border-color:var(--green);background:var(--green-light)}
+.relief-option:active{transform:scale(.98)}
+.icon{width:40px;height:40px;flex:0 0 40px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:var(--green-light);font-size:20px}
+.option-text{flex:1}
+.option-title{display:block;font-size:14px;font-weight:900;margin-bottom:3px}
+.option-description{display:block;color:var(--muted);font-size:10px;line-height:1.3}
+.arrow{color:#9aa2ad;font-size:18px;font-weight:700}
+.note{text-align:center;margin-top:14px;color:#8a929d;font-size:10px;line-height:1.4}
 
-:root {
-  --green: #087443;
-  --green-dark: #055b34;
-  --green-light: #eef8f3;
-  --text: #17202b;
-  --muted: #687386;
-  --border: #e2e6ea;
-  --bg: #f5f7f8;
-  --white: #fff;
-}
-
-html,
-body {
-  width: 100%;
-  min-height: 100%;
-}
-
-body {
-  min-height: 100dvh;
-  background: var(--bg);
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
-}
-
-button {
-  font: inherit;
-  -webkit-appearance: none;
-  appearance: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-#page {
-  min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-}
-
-.card {
-  width: 100%;
-  max-width: 390px;
-  background: var(--white);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 28px rgba(0,0,0,.07);
-}
-
-/* HEADER */
-
-.header {
-  background: var(--green);
-  color: #fff;
-  text-align: center;
-  padding: 22px 18px;
-}
-
-.check {
-  width: 38px;
-  height: 38px;
-  margin: 0 auto 9px;
-  border-radius: 50%;
-  background: #fff;
-  color: var(--green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 21px;
-  font-weight: 900;
-}
-
-.header h1 {
-  font-size: 21px;
-  line-height: 1.2;
-  font-weight: 900;
-}
-
-.header p {
-  margin-top: 4px;
-  font-size: 11px;
-  opacity: .85;
-  font-weight: 700;
-}
-
-/* CONTENT */
-
-.content {
-  padding: 20px 18px 18px;
-}
-
-.status {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  margin-bottom: 17px;
-  padding: 8px 10px;
-  border-radius: 7px;
-  background: var(--green-light);
-  color: var(--green);
-  font-size: 11px;
-  font-weight: 800;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--green);
-}
-
-.title {
-  text-align: center;
-  font-size: 23px;
-  line-height: 1.2;
-  font-weight: 900;
-  margin-bottom: 5px;
-}
-
-.subtitle {
-  text-align: center;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.4;
-  margin-bottom: 18px;
-}
-
-/* AMOUNTS */
-
-.amount-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 9px;
-  margin-bottom: 14px;
-}
-
-.amount {
-  height: 58px;
-  border: 1.5px solid var(--border);
-  border-radius: 9px;
-  background: #fff;
-  color: var(--green);
-  font-size: 19px;
-  font-weight: 900;
-  cursor: pointer;
-  transition: .15s ease;
-}
-
-.amount:active {
-  transform: scale(.97);
-}
-
-.amount.selected {
-  background: var(--green);
-  border-color: var(--green);
-  color: #fff;
-}
-
-/* CTA */
-
-.continue {
-  width: 100%;
-  height: 53px;
-  border: 0;
-  border-radius: 9px;
-  background: var(--green);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 900;
-  cursor: pointer;
-}
-
-.continue:active {
-  transform: scale(.98);
-}
-
-.continue:disabled {
-  opacity: .45;
-  cursor: not-allowed;
-}
-
-.note {
-  text-align: center;
-  margin-top: 10px;
-  color: #89919c;
-  font-size: 10px;
-}
-
-/* SMALL SCREENS */
-
-@media (max-width: 380px) {
-
-  #page {
-    padding: 10px;
-  }
-
-  .header {
-    padding: 18px 15px;
-  }
-
-  .check {
-    width: 33px;
-    height: 33px;
-    font-size: 18px;
-    margin-bottom: 7px;
-  }
-
-  .header h1 {
-    font-size: 19px;
-  }
-
-  .content {
-    padding: 16px 14px;
-  }
-
-  .title {
-    font-size: 21px;
-  }
-
-  .amount {
-    height: 52px;
-    font-size: 17px;
-  }
-
-  .continue {
-    height: 49px;
-  }
+@media(max-width:380px){
+#page{padding:9px}
+.header{padding:18px 15px}
+.content{padding:16px 13px}
+.title{font-size:20px}
+.relief-option{min-height:59px;padding:9px 11px}
+.icon{width:36px;height:36px;flex-basis:36px;font-size:18px}
 }
 </style>
 </head>
@@ -253,180 +52,103 @@ button {
 <body>
 
 <div id="page">
+<div class="card">
 
-  <div class="card">
+<header class="header">
+<div class="check">✓</div>
+<h1>Relief Support</h1>
+<p>Choose the type of support you need</p>
+</header>
 
-    <header class="header">
-      <div class="check">✓</div>
-      <h1>Congratulations!</h1>
-      <p>You are qualified to continue</p>
-    </header>
+<main class="content">
 
-    <main class="content">
+<div class="status">
+<span class="status-dot"></span>
+Relief support is currently available
+</div>
 
-      <div class="status">
-        <span class="status-dot"></span>
-        Application window is open
-      </div>
+<h2 class="title">What do you need help with?</h2>
 
-      <h2 class="title">How much do you need?</h2>
+<p class="subtitle">
+Select the option that best describes your current need.
+</p>
 
-      <p class="subtitle">
-        Select the amount that best matches your needs.
-      </p>
+<div class="relief-options">
 
-      <form id="form">
+<button class="relief-option" type="button" data-type="feeding">
+<span class="icon">🍚</span>
+<span class="option-text">
+<span class="option-title">Food &amp; Feeding</span>
+<span class="option-description">Help with food and everyday feeding needs</span>
+</span>
+<span class="arrow">›</span>
+</button>
 
-        <div class="amount-grid">
+<button class="relief-option" type="button" data-type="housing">
+<span class="icon">🏠</span>
+<span class="option-text">
+<span class="option-title">Rent &amp; Housing</span>
+<span class="option-description">Support with rent and essential housing costs</span>
+</span>
+<span class="arrow">›</span>
+</button>
 
-          <button
-            class="amount"
-            type="button"
-            data-amount="50000"
-            data-label="₦50K">
-            ₦50K
-          </button>
+<button class="relief-option" type="button" data-type="medical">
+<span class="icon">🏥</span>
+<span class="option-text">
+<span class="option-title">Medical Needs</span>
+<span class="option-description">Assistance with essential medical expenses</span>
+</span>
+<span class="arrow">›</span>
+</button>
 
-          <button
-            class="amount"
-            type="button"
-            data-amount="100000"
-            data-label="₦100K">
-            ₦100K
-          </button>
-
-          <button
-            class="amount"
-            type="button"
-            data-amount="200000"
-            data-label="₦200K">
-            ₦200K
-          </button>
-
-          <button
-            class="amount"
-            type="button"
-            data-amount="300000"
-            data-label="₦300K">
-            ₦300K
-          </button>
-
-          <button
-            class="amount"
-            type="button"
-            data-amount="400000"
-            data-label="₦400K">
-            ₦400K
-          </button>
-
-          <button
-            class="amount"
-            type="button"
-            data-amount="500000"
-            data-label="₦500K">
-            ₦500K
-          </button>
-
-        </div>
-
-        <button
-          id="continue"
-          class="continue"
-          type="submit"
-          disabled>
-          CONTINUE
-        </button>
-
-      </form>
-
-      <div class="note">
-        Select an amount to continue
-      </div>
-
-    </main>
-
-  </div>
+<button class="relief-option" type="button" data-type="essentials">
+<span class="icon">💡</span>
+<span class="option-text">
+<span class="option-title">Bills &amp; Essentials</span>
+<span class="option-description">Help with important everyday expenses</span>
+</span>
+<span class="arrow">›</span>
+</button>
 
 </div>
 
+<div class="note">Select an option to continue.</div>
+
+</main>
+</div>
+</div>
+
 <script>
-(function () {
+(function(){
 
-  /* ADD DESTINATION URLS HERE */
-  var links = [
-    
-  ];
+var links={
+feeding:"",
+housing:"",
+medical:"",
+essentials:""
+};
 
-  var selectedAmount = null;
+document.querySelectorAll(".relief-option").forEach(function(option){
 
-  var amountButtons = document.querySelectorAll(".amount");
-  var form = document.getElementById("form");
-  var continueButton = document.getElementById("continue");
+option.addEventListener("click",function(){
 
-  function getRandomUrl() {
+var type=option.getAttribute("data-type");
+var destination=links[type];
 
-    if (!links.length) {
-      return "";
-    }
+if(typeof fbq==="function"){
+fbq("trackCustom","ReliefNeedSelected",{
+relief_type:type
+});
+}
 
-    return links[
-      Math.floor(Math.random() * links.length)
-    ];
-  }
+if(destination){
+window.location.href=destination;
+}
 
-  amountButtons.forEach(function (button) {
+});
 
-    button.addEventListener("click", function () {
-
-      amountButtons.forEach(function (item) {
-        item.classList.remove("selected");
-      });
-
-      button.classList.add("selected");
-
-      selectedAmount = button;
-
-      continueButton.disabled = false;
-
-      if (typeof fbq === "function") {
-
-        fbq("trackCustom", "AmountSelected", {
-          amount: button.getAttribute("data-amount"),
-          amount_label: button.getAttribute("data-label"),
-          currency: "NGN"
-        });
-
-      }
-
-    });
-
-  });
-
-  form.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    if (!selectedAmount) {
-      return;
-    }
-
-    if (typeof fbq === "function") {
-
-      fbq("trackCustom", "ContinueClicked", {
-        amount: selectedAmount.getAttribute("data-amount"),
-        amount_label: selectedAmount.getAttribute("data-label"),
-        currency: "NGN"
-      });
-
-    }
-
-    var destination = getRandomUrl();
-
-    if (destination) {
-      window.location.href = destination;
-    }
-
-  });
+});
 
 })();
 </script>
