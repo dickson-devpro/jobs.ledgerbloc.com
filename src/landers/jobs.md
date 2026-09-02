@@ -1,6 +1,6 @@
 ---
 title: Jobs landing page
-slug: grant
+slug: grant/
 ---
 
 <!DOCTYPE html>
