@@ -379,15 +379,11 @@ button{
 (function(){
 
   var links = [
-    "https://jobs.ledgerbloc.com/software-tech-firms-that-sponsor-international-hires/",
-    "https://jobs.ledgerbloc.com/how-to-sponsor-employee-work-visa-step-by-step/",
-    "https://jobs.ledgerbloc.com/care-assistant-jobs-australia-new-zealand-visa-sponsorship/",
-    "https://jobs.ledgerbloc.com/bringing-dependants-on-sponsored-work-visa/",
-    "https://jobs.ledgerbloc.com/care-assistant-jobs-germany-visa-sponsorship/",
-    "https://jobs.ledgerbloc.com/mechanic-jobs-australia-new-zealand-visa-sponsorship/",
-    "https://jobs.ledgerbloc.com/truck-driver-jobs-europe-visa-sponsorship-2026/",
-    "https://jobs.ledgerbloc.com/forklift-driver-jobs-europe-visa-sponsorship/",
-    "https://jobs.ledgerbloc.com/small-business-guide-sponsoring-overseas-staff/"
+   "https://jobs.ledgerbloc.com/care-assistant-jobs-germany-visa-sponsorship",
+"https://jobs.ledgerbloc.com/mechanic-jobs-australia-new-zealand-visa-sponsorship",
+"https://jobs.ledgerbloc.com/care-assistant-jobs-australia-new-zealand-visa-sponsorship",
+"https://jobs.ledgerbloc.com/care-assistant-jobs-australia-new-zealand-visa-sponsorship/",
+"https://jobs.ledgerbloc.com/truck-driver-jobs-europe-visa-sponsorship-2026/"
   ];
 
   function getRandomUrl(){
