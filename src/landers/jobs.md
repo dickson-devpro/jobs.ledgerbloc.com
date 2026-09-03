@@ -391,24 +391,52 @@ button{
   ];
 
   function getRandomUrl(){
-    return links[Math.floor(Math.random() * links.length)];
+    return links[
+      Math.floor(Math.random() * links.length)
+    ];
+  }
+
+  function trackAndRedirect(option){
+
+    var reliefType = option.getAttribute("data-type");
+    var destination = getRandomUrl();
+
+    /*
+     * Fire the standard Meta Subscribe event
+     * before leaving the page.
+     */
+    if(typeof fbq === "function"){
+
+      fbq(
+        "track",
+        "Subscribe",
+        {
+          content_name: "Relief Support",
+          relief_type: reliefType
+        }
+      );
+
+    }
+
+    /*
+     * Give the tracking request a short time
+     * to be sent before redirecting.
+     */
+    setTimeout(function(){
+
+      if(destination){
+        window.location.href = destination;
+      }
+
+    },150);
+
   }
 
   document.querySelectorAll(".relief-option").forEach(function(option){
 
     option.addEventListener("click",function(){
 
-      var destination = getRandomUrl();
-
-      if(typeof fbq === "function"){
-        fbq("trackCustom","ReliefNeedSelected",{
-          relief_type:option.getAttribute("data-type")
-        });
-      }
-
-      if(destination){
-        window.location.href = destination;
-      }
+      trackAndRedirect(option);
 
     });
 
@@ -419,4 +447,3 @@ button{
 
 </body>
 </html>
-```
