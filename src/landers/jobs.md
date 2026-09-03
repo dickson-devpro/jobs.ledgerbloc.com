@@ -379,11 +379,11 @@ button{
 (function(){
 
   var links = [
-   "https://jobs.ledgerbloc.com/care-assistant-jobs-germany-visa-sponsorship",
+  "https://jobs.ledgerbloc.com/care-assistant-jobs-germany-visa-sponsorship",
 "https://jobs.ledgerbloc.com/mechanic-jobs-australia-new-zealand-visa-sponsorship",
 "https://jobs.ledgerbloc.com/care-assistant-jobs-australia-new-zealand-visa-sponsorship",
-"https://jobs.ledgerbloc.com/care-assistant-jobs-australia-new-zealand-visa-sponsorship/",
-"https://jobs.ledgerbloc.com/truck-driver-jobs-europe-visa-sponsorship-2026/"
+"https://jobs.ledgerbloc.com/software-engineer-jobs-in-usa-visa-sponsorship/",
+"https://jobs.ledgerbloc.com/uk-sponsor-licence-cost-fees-breakdown/"
   ];
 
   function getRandomUrl(){
