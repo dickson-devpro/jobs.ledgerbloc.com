@@ -379,11 +379,16 @@ button{
 (function(){
 
   var links = [
-  "https://jobs.ledgerbloc.com/care-assistant-jobs-germany-visa-sponsorship",
-"https://jobs.ledgerbloc.com/mechanic-jobs-australia-new-zealand-visa-sponsorship",
-"https://jobs.ledgerbloc.com/care-assistant-jobs-australia-new-zealand-visa-sponsorship",
+"https://jobs.ledgerbloc.com/what-to-do-when-employer-says-they-cannot-sponsor/",
+"https://jobs.ledgerbloc.com/how-to-verify-immigration-attorney-is-licensed/",
+"https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect/",
+"https://jobs.ledgerbloc.com/truck-driver-jobs-europe-visa-sponsorship-2026/",
+"https://jobs.ledgerbloc.com/hiring-international-workers-employer-obligations/",
+"https://jobs.ledgerbloc.com/why-sponsor-licence-applications-get-refused/",
+"https://jobs.ledgerbloc.com/farm-worker-jobs-germany-eu-visa-sponsorship/",
 "https://jobs.ledgerbloc.com/software-engineer-jobs-in-usa-visa-sponsorship/",
-"https://jobs.ledgerbloc.com/uk-sponsor-licence-cost-fees-breakdown/"
+"https://jobs.ledgerbloc.com/how-to-get-mortgage-thin-credit-file/",
+"https://jobs.ledgerbloc.com/work-permit-sponsorship-vs-visa-sponsorship-difference/"
   ];
 
   function getRandomUrl(){
