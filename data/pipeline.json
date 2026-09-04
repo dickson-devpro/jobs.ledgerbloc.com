@@ -28,9 +28,9 @@
         "how to check if a company holds a sponsor licence",
         "sponsor licence renewal and reporting changes",
         "small business guide to sponsoring overseas staff",
-        "corporate immigration services what they do and cost",
         "Immigration Skills Charge explained for employers",
-        "right to work checks for sponsored employees"
+        "right to work checks for sponsored employees",
+        "corporate immigration services what they do and cost"
       ]
     },
     {
@@ -50,10 +50,60 @@
       ]
     },
     {
+      "category": "Work Visas",
+      "categorySlug": "visas",
+      "keywords": [
+        "H visa types explained H-1B H-2A H-2B",
+        "Germany job seeker visa and work visa requirements",
+        "what working visa sponsorship means and who qualifies",
+        "work visa routes compared by country"
+      ]
+    },
+    {
+      "category": "Immigration Legal",
+      "categorySlug": "legal",
+      "keywords": [
+        "when you actually need an immigration lawyer",
+        "what immigration lawyers charge and how to choose one",
+        "UK immigration lawyers in London what to expect",
+        "EB-2 NIW attorney when you need one and what it costs",
+        "immigration lawyer for a partner or spouse visa",
+        "how to contact and consult an immigration attorney",
+        "how to verify an immigration attorney is licensed"
+      ]
+    },
+    {
+      "category": "US Tax",
+      "categorySlug": "tax",
+      "keywords": [
+        "how to file a US tax return step by step",
+        "US income tax brackets and rates explained",
+        "US tax filing for citizens living abroad",
+        "US tax forms explained W-2 1099 1040",
+        "how to pay US tax from overseas",
+        "how to get a US Employer Identification Number",
+        "US tax reporting obligations for non-residents",
+        "state versus federal income tax in the US"
+      ]
+    },
+    {
+      "category": "Mortgages",
+      "categorySlug": "mortgages",
+      "keywords": [
+        "first time home buyer mortgage requirements",
+        "home loans with bad credit what lenders accept",
+        "VA home loan eligibility and benefits",
+        "mortgage insurance premium and PMI explained",
+        "how to get a mortgage with a thin credit file",
+        "down payment requirements by loan type"
+      ]
+    },
+    {
       "category": "Moving & Cover",
       "categorySlug": "moving",
       "keywords": [
         "work visa health insurance requirements by country",
+        "cost of UK private health insurance explained",
         "Immigration Health Surcharge explained",
         "relocation costs when moving for a sponsored job",
         "bringing dependants on a sponsored work visa",
