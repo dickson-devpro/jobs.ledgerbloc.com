@@ -97,6 +97,26 @@
     {
       "name": "Moving & Cover",
       "slug": "moving"
+    },
+    {
+      "name": "Work Visas",
+      "slug": "visas"
+    },
+    {
+      "name": "Immigration Legal",
+      "slug": "legal"
+    },
+    {
+      "name": "US Tax",
+      "slug": "tax"
+    },
+    {
+      "name": "Mortgages",
+      "slug": "mortgages"
+    },
+    {
+      "name": "Moving & Cover",
+      "slug": "moving"
     }
   ],
   "footerLinks": [
