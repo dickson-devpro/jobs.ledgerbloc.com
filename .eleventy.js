@@ -21,6 +21,20 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("slugify", slugify);
 
+  // Categories, de-duplicated by slug. A duplicate added in /admin used to
+  // crash the build with a DuplicatePermalinkOutputError; now the later
+  // entry is simply ignored.
+  eleventyConfig.addGlobalData("navCategories", () => {
+    const site = JSON.parse(require("node:fs").readFileSync("src/_data/site.json", "utf8"));
+    const seen = new Set();
+    return (site.categories || []).filter((c) => {
+      const s = String(c.slug || "").trim().toLowerCase();
+      if (!s || seen.has(s)) return false;
+      seen.add(s);
+      return true;
+    });
+  });
+
   /* -- Indeed search URLs: evergreen, country-aware, always fresh -- */
   // Domain map comes from data/indeed-countries.json so the pipeline can add
   // destinations on its own without anyone editing this file.
