@@ -49,9 +49,13 @@ collections:
           - name: categories
             label: "Navigation categories"
             widget: list
+            summary: "{{name}}  ({{slug}})"
             fields:
-              - { name: name, label: Name, widget: string }
-              - { name: slug, label: Slug, widget: string }
+              - { name: name, label: Name, widget: string, hint: "Shown in the nav, e.g. US Tax" }
+              - { name: slug, label: Slug, widget: string, hint: "URL segment, e.g. tax  ->  /tax/" }
+              - { name: description, label: Description, widget: text, required: false, hint: "One line shown on the category page and its cards" }
+              - { name: country, label: "Indeed country", widget: string, required: false, hint: "usa, canada, uk, europe, australia, gulf — sets which Indeed domain the category CTA searches" }
+              - { name: jobKeyword, label: "Indeed search term", widget: string, required: false, hint: "e.g. visa sponsorship — leave blank for non-job categories" }
           - name: footerLinks
             label: "Footer links"
             widget: list
