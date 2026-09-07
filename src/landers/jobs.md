@@ -379,17 +379,10 @@ button{
 (function(){
 
   var links = [
-"https://jobs.ledgerbloc.com/care-assistant-jobs-germany-visa-sponsorship",
-"https://jobs.ledgerbloc.com/care-assistant-jobs-germany-visa-sponsorship",
-"https://jobs.ledgerbloc.com/mechanic-jobs-australia-new-zealand-visa-sponsorship",
-"https://jobs.ledgerbloc.com/mechanic-jobs-australia-new-zealand-visa-sponsorship",
-"https://jobs.ledgerbloc.com/farm-worker-jobs-germany-eu-visa-sponsorship",
-"https://jobs.ledgerbloc.com/farm-worker-jobs-germany-eu-visa-sponsorship",
-"https://jobs.ledgerbloc.com/work-permit-sponsorship-vs-visa-sponsorship-difference/",
-"https://jobs.ledgerbloc.com/h-visa-types-explained-h1b-h2a-h2b/",
-"https://jobs.ledgerbloc.com/sponsor-licence-renewal-reporting-changes/",
-"https://jobs.ledgerbloc.com/work-visa-routes-compared-by-country/",
-"https://jobs.ledgerbloc.com/truck-driver-jobs-europe-visa-sponsorship-2026"
+"https://jobs.ledgerbloc.com/how-to-get-us-employer-identification-number/",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa/",
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120/",
+"https://jobs.ledgerbloc.com/temporary-housing-in-london-for-uk-investor-visa-applicants-cost-guide/"
   ];
 
   function getRandomUrl(){
