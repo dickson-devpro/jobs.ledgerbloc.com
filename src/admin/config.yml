@@ -71,6 +71,13 @@ collections:
     folder: src/articles
     create: true
     slug: "{{slug}}"
+    # Newest first in the CMS list, and offer the other sorts in the dropdown.
+    sortable_fields:
+      fields: [datePublished, dateModified, title, category]
+      default:
+        field: datePublished
+        direction: descending
+    summary: "{{datePublished}}  ·  {{title}}"
     fields:
       - { name: layout, label: Layout, widget: hidden, default: article.njk }
       - { name: title, label: Title, widget: string }
