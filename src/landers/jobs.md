@@ -381,8 +381,7 @@ button{
   var links = [
 "https://jobs.ledgerbloc.com/how-to-get-us-employer-identification-number/",
 "https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa/",
-"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120/",
-"https://jobs.ledgerbloc.com/temporary-housing-in-london-for-uk-investor-visa-applicants-cost-guide/"
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120/"
   ];
 
   function getRandomUrl(){
