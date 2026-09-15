@@ -380,16 +380,7 @@ button{
 
   var links = [
 "https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120/",
-"https://jobs.ledgerbloc.com/immigration-health-surcharge-explained/",
-"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa/",
-"https://jobs.ledgerbloc.com/work-visa-health-insurance-requirements-by-country/",
-"https://jobs.ledgerbloc.com/down-payment-requirements-by-loan-type/",
-"https://jobs.ledgerbloc.com/relocation-costs-moving-sponsored-job/",
-"https://jobs.ledgerbloc.com/how-long-sponsor-licence-application-takes/",
-"https://jobs.ledgerbloc.com/when-you-actually-need-an-immigration-lawyer/",
-"https://jobs.ledgerbloc.com/how-to-sponsor-employee-work-visa-step-by-step/",
-"https://jobs.ledgerbloc.com/sponsor-licence-renewal-reporting-changes/",
-"https://jobs.ledgerbloc.com/eb-2-niw-attorney-when-you-need-one-what-it-costs/"
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa/"
   ];
 
   function getRandomUrl(){
