@@ -28,7 +28,7 @@ src="https://www.facebook.com/tr?id=1284065979244898&ev=PageView&noscript=1"
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#ffffff">
-<title>Are you looking for a job in Nigeria?</title>
+<title>Are you Interested?</title>
 <style>
 *{box-sizing:border-box;margin:0}
 html,body{height:100%}
