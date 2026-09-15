@@ -102,7 +102,7 @@ button:focus-visible{
 <body>
 
 <main class="wrap">
-  <h1>Are you looking for a job in Nigeria?</h1>
+  <h1>Are you Interested?</h1>
 
   <div class="btns">
     <button class="choice" onclick="pick(this)">YES</button>
