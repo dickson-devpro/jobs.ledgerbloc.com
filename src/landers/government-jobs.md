@@ -123,27 +123,16 @@ function pick(el){
 }
 
 var urls = [
-  "https://jobs.ledgerbloc.com/cost-of-uk-private-health-insurance-explained/",
-  "https://jobs.ledgerbloc.com/down-payment-requirements-by-loan-type/",
-  "https://jobs.ledgerbloc.com/eb-2-niw-attorney-when-you-need-one-what-it-costs/",
-  "https://jobs.ledgerbloc.com/first-time-home-buyer-mortgage-requirements/",
-  "https://jobs.ledgerbloc.com/germany-job-seeker-visa-work-visa-requirements/",
-  "https://jobs.ledgerbloc.com/h-visa-types-explained-h1b-h2a-h2b/",
-  "https://jobs.ledgerbloc.com/home-loans-bad-credit-what-lenders-accept/",
-  "https://jobs.ledgerbloc.com/how-to-contact-consult-immigration-attorney/",
-  "https://jobs.ledgerbloc.com/how-to-file-us-tax-return-step-by-step/",
-  "https://jobs.ledgerbloc.com/how-to-get-mortgage-thin-credit-file/",
-  "https://jobs.ledgerbloc.com/how-to-get-us-employer-identification-number/",
-  "https://jobs.ledgerbloc.com/how-to-pay-us-tax-from-overseas/",
-  "https://jobs.ledgerbloc.com/how-to-verify-immigration-attorney-is-licensed/",
-  "https://jobs.ledgerbloc.com/immigration-lawyer-for-partner-spouse-visa/",
-  "https://jobs.ledgerbloc.com/mortgage-insurance-premium-pmi-explained/",
-  "https://jobs.ledgerbloc.com/state-vs-federal-income-tax-us-guide/",
-  "https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect/",
-  "https://jobs.ledgerbloc.com/us-income-tax-brackets-rates-explained/",
-  "https://jobs.ledgerbloc.com/us-tax-filing-for-citizens-living-abroad/",
-  "https://jobs.ledgerbloc.com/us-tax-forms-explained-w2-1099-1040/",
-  "https://jobs.ledgerbloc.com/us-tax-reporting-obligations-non-residents/"
+  "https://jobs.ledgerbloc.com/immigration-health-surcharge-explained/",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa/",
+"https://jobs.ledgerbloc.com/work-visa-health-insurance-requirements-by-country/",
+"https://jobs.ledgerbloc.com/down-payment-requirements-by-loan-type/",
+"https://jobs.ledgerbloc.com/relocation-costs-moving-sponsored-job/",
+"https://jobs.ledgerbloc.com/how-long-sponsor-licence-application-takes/",
+"https://jobs.ledgerbloc.com/when-you-actually-need-an-immigration-lawyer/",
+"https://jobs.ledgerbloc.com/how-to-sponsor-employee-work-visa-step-by-step/",
+"https://jobs.ledgerbloc.com/sponsor-licence-renewal-reporting-changes/",
+"https://jobs.ledgerbloc.com/eb-2-niw-attorney-when-you-need-one-what-it-costs/"
 ];
 
 function go(){
