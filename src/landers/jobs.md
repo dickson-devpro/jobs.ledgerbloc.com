@@ -379,8 +379,7 @@ button{
 (function(){
 
   var links = [
-"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
-"https://jobs.ledgerbloc.com/us-tax-reporting-obligations-non-residents"
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120"
   ];
 
   function getRandomUrl(){
