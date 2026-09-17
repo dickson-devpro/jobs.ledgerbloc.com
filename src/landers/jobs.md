@@ -379,7 +379,13 @@ button{
 (function(){
 
   var links = [
-"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120/"
+"https://jobs.ledgerbloc.com/eb-2-niw-attorney-when-you-need-one-what-it-costs",
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
+"https://jobs.ledgerbloc.com/us-tax-reporting-obligations-non-residents",
+"https://jobs.ledgerbloc.com/first-time-home-buyer-mortgage-requirements",
+"https://jobs.ledgerbloc.com/temporary-housing-in-london-for-uk-investor-visa-applicants-cost-guide/",
+"https://jobs.ledgerbloc.com/va-home-loan-eligibility-and-benefits/"
   ];
 
   function getRandomUrl(){
