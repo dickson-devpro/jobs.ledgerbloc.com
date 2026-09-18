@@ -586,10 +586,7 @@ h1{
 
       });
 
-    });
-
   });
-
 
   document
     .getElementById("continueButton")
