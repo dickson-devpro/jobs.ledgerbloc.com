@@ -523,7 +523,19 @@ h1{
    * Replace these with your real URLs later.
    */
   const links = [
-    "https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120/"
+    "https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
+"https://jobs.ledgerbloc.com/first-time-home-buyer-mortgage-requirements/",
+"https://jobs.ledgerbloc.com/cost-of-uk-private-health-insurance-explained/",
+"https://jobs.ledgerbloc.com/visa-sponsorship-application-process-end-to-end/",
+"https://jobs.ledgerbloc.com/how-long-sponsor-licence-application-takes/",
+"https://jobs.ledgerbloc.com/how-to-find-companies-that-sponsor-work-visas/"
   ];
 
   let selectedAmount = null;
