@@ -1,6 +1,6 @@
 ---
 title: WELCOME GRANT
-slug: offer
+slug: offer/
 ---
 
 <!-- Meta Pixel Code -->
