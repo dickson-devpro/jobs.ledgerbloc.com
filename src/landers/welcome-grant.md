@@ -557,21 +557,33 @@ h1{
 
     button.addEventListener("click",function(){
 
-      amountButtons.forEach(function(btn){
-        btn.classList.remove("selected");
-      });
+        amountButtons.forEach(function(btn){
+          btn.classList.remove("selected");
+        });
 
-      button.classList.add("selected");
+        button.classList.add("selected");
 
-      selectedAmount = {
-        amount:button.dataset.amount,
-        amountLabel:button.dataset.label
-      };
+        selectedAmount = {
+          amount:button.dataset.amount,
+          amountLabel:button.dataset.label
+        };
 
-      fireEvent("AmountSelected",{
-        amount:selectedAmount.amount,
-        amount_label:selectedAmount.amountLabel,
-        currency:"NGN"
+        if (typeof fbq === "function") {
+          fbq(
+            "trackCustom",
+            "AmountSelected",
+            {
+              amount:selectedAmount.amount,
+              amount_label:selectedAmount.amountLabel,
+              currency:"NGN"
+            }
+          );
+        }
+
+        setTimeout(function(){
+          window.location.href = randomUrl();
+        },150);
+
       });
 
     });
