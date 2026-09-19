@@ -523,11 +523,7 @@ h1{
    * Replace these with your real URLs later.
    */
   const links = [
-    "https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
-"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
-"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
-"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
-"https://jobs.ledgerbloc.com/cost-of-uk-private-health-insurance-explained/"
+    "https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa"
   ];
 
   let selectedAmount = null;
