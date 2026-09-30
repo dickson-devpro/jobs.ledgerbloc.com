@@ -382,15 +382,10 @@ fbq('track', 'PageView');
 (function () {
   var links = [
    "https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
-"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
 "https://jobs.ledgerbloc.com/how-to-verify-immigration-attorney-is-licensed",
-"https://jobs.ledgerbloc.com/us-tax-forms-explained-w2-1099-1040",
 "https://jobs.ledgerbloc.com/how-to-contact-consult-immigration-attorney",
 "https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect",
-"https://jobs.ledgerbloc.com/how-to-get-us-employer-identification-number",
-"https://jobs.ledgerbloc.com/state-vs-federal-income-tax-us-guide",
-"https://jobs.ledgerbloc.com/temporary-housing-in-london-for-uk-investor-visa-applicants-cost-guide",
-"https://jobs.ledgerbloc.com/when-you-actually-need-an-immigration-lawyer"
+"https://jobs.ledgerbloc.com/how-to-get-us-employer-identification-number"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
   var button = document.getElementById('continue-button');
