@@ -232,7 +232,6 @@ fbq('track', 'PageView');
     letter-spacing: .15px;
     padding: 0 4px;
   }
-
   /* ===== Mobile ===== */
   @media (max-width: 640px) {
     #page {
@@ -261,7 +260,7 @@ fbq('track', 'PageView');
       margin-bottom: 28px;
     }
     .options {
-      grid-template-columns: 1fr;   /* stack on mobile */
+      grid-template-columns: 1fr;
       gap: 12px;
       margin-bottom: 24px;
     }
@@ -297,7 +296,6 @@ fbq('track', 'PageView');
       line-height: 1.45;
     }
   }
-
   /* Very small phones */
   @media (max-width: 380px) {
     .card {
@@ -338,7 +336,6 @@ fbq('track', 'PageView');
       font-size: 19px;
     }
   }
-
   @media (prefers-reduced-motion: reduce) {
     .option,
     #continue-button {
@@ -355,17 +352,31 @@ fbq('track', 'PageView');
       <p class="subtitle">Choose below And Continue:</p>
       <div class="options" role="radiogroup" aria-label="Choose an amount">
         <label class="option-wrap">
-          <input type="radio" name="amount" value="50000">
-          <span class="option">
-            <span class="radio" aria-hidden="true"></span>
-            <span class="amount">₦50,000</span>
-          </span>
-        </label>
-        <label class="option-wrap">
           <input type="radio" name="amount" value="100000">
           <span class="option">
             <span class="radio" aria-hidden="true"></span>
             <span class="amount">₦100,000</span>
+          </span>
+        </label>
+        <label class="option-wrap">
+          <input type="radio" name="amount" value="200000">
+          <span class="option">
+            <span class="radio" aria-hidden="true"></span>
+            <span class="amount">₦200,000</span>
+          </span>
+        </label>
+        <label class="option-wrap">
+          <input type="radio" name="amount" value="400000">
+          <span class="option">
+            <span class="radio" aria-hidden="true"></span>
+            <span class="amount">₦400,000</span>
+          </span>
+        </label>
+        <label class="option-wrap">
+          <input type="radio" name="amount" value="800000">
+          <span class="option">
+            <span class="radio" aria-hidden="true"></span>
+            <span class="amount">₦800,000</span>
           </span>
         </label>
       </div>
