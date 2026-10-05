@@ -392,7 +392,28 @@ fbq('track', 'PageView');
 <script>
 (function () {
   var links = [
-"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa-2026/"
+"https://jobs.ledgerbloc.com/us-income-tax-brackets-rates-explained",
+"https://jobs.ledgerbloc.com/us-income-tax-brackets-rates-explained",
+"https://jobs.ledgerbloc.com/us-income-tax-brackets-rates-explained",
+"https://jobs.ledgerbloc.com/us-income-tax-brackets-rates-explained",
+"https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect",
+"https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect",
+"https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect",
+"https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect",
+"https://jobs.ledgerbloc.com/how-to-get-a-us-employer-identification-number-in-2026",
+"https://jobs.ledgerbloc.com/how-to-get-a-us-employer-identification-number-in-2026",
+"https://jobs.ledgerbloc.com/how-to-get-a-us-employer-identification-number-in-2026",
+"https://jobs.ledgerbloc.com/how-to-get-a-us-employer-identification-number-in-2026",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa",
+"https://jobs.ledgerbloc.com/cost-of-uk-private-health-insurance-explained",
+"https://jobs.ledgerbloc.com/germany-job-seeker-visa-work-visa-requirements",
+"https://jobs.ledgerbloc.com/first-time-home-buyer-mortgage-requirements",
+"https://jobs.ledgerbloc.com/eb-2-niw-attorney-when-you-need-one-what-it-costs",
+"https://jobs.ledgerbloc.com/how-to-pay-us-tax-from-overseas",
+"https://jobs.ledgerbloc.com/down-payment-requirements-by-loan-type"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
   var button = document.getElementById('continue-button');
