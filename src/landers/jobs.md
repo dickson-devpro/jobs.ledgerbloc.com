@@ -392,8 +392,7 @@ fbq('track', 'PageView');
 <script>
 (function () {
   var links = [
-"https://jobs.ledgerbloc.com/how-to-get-a-us-employer-identification-number-in-2026",
-"https://jobs.ledgerbloc.com/down-payment-requirements-by-loan-type/"
+"https://jobs.ledgerbloc.com/how-to-get-a-us-employer-identification-number-in-2026"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
   var button = document.getElementById('continue-button');
