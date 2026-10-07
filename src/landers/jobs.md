@@ -403,7 +403,6 @@ fbq('track', 'PageView');
 "https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect",
 "https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect",
 "https://jobs.ledgerbloc.com/us-tax-forms-explained-w2-1099-1040",
-"https://visajobs.ledgerbloc.com/l-1-visa-sponsorship-guide-for-multinational-companies-2026-costs-process-and-the-eb-1c-green-card-path",
 "https://jobs.ledgerbloc.com/why-sponsor-licence-applications-get-refused",
 "https://jobs.ledgerbloc.com/what-immigration-lawyers-charge-how-to-choose-one",
 "https://jobs.ledgerbloc.com/accountant-jobs-uk-visa-sponsorship"
