@@ -392,7 +392,14 @@ fbq('track', 'PageView');
 <script>
 (function () {
   var links = [
-"https://jobs.ledgerbloc.com/how-to-get-a-us-employer-identification-number-in-2026/"
+"https://jobs.ledgerbloc.com/how-to-get-us-employer-identification-number",
+"https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect",
+"https://jobs.ledgerbloc.com/cost-of-uk-private-health-insurance-explained",
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa-2026",
+"https://jobs.ledgerbloc.com/eb-2-niw-attorney-when-you-need-one-what-it-costs",
+"https://jobs.ledgerbloc.com/mortgage-insurance-premium-pmi-explained",
+"https://jobs.ledgerbloc.com/how-to-pay-us-tax-from-overseas"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
   var button = document.getElementById('continue-button');
