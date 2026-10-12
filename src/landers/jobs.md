@@ -392,7 +392,6 @@ fbq('track', 'PageView');
 <script>
 (function () {
   var links = [
-"https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect",
 "https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa-2026"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
