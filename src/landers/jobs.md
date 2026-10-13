@@ -401,7 +401,6 @@ fbq('track', 'PageView');
 "https://jobs.ledgerbloc.com/us-tax-filing-for-citizens-living-abroad",
 "https://jobs.ledgerbloc.com/why-sponsor-licence-applications-get-refused",
 "https://jobs.ledgerbloc.com/cost-of-uk-private-health-insurance-explained",
-"https://visajobs.ledgerbloc.com/care-assistant-jobs-in-the-uk-with-skilled-worker-visa-sponsorship-2026-the-december-2026-deadline-guide",
 "https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
 "https://jobs.ledgerbloc.com/farm-worker-jobs-germany-eu-visa-sponsorship",
 "https://jobs.ledgerbloc.com/us-tax-forms-explained-w2-1099-1040"
