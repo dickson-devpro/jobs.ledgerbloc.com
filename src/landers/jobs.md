@@ -392,7 +392,6 @@ fbq('track', 'PageView');
 <script>
 (function () {
   var links = [
-"https://jobs.ledgerbloc.com/mortgage-insurance-premium-pmi-explained",
 "https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
