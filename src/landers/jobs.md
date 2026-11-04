@@ -399,7 +399,6 @@ fbq('track', 'PageView');
 "https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
 "https://jobs.ledgerbloc.com/how-to-file-us-tax-return-step-by-step",
 "https://jobs.ledgerbloc.com/sponsored-job-offer-what-to-check-before-accepting",
-"https://visajobs.ledgerbloc.com/care-assistant-jobs-in-the-uk-with-skilled-worker-visa-sponsorship-2026-the-december-2026-deadline-guide",
 "https://jobs.ledgerbloc.com/home-loans-bad-credit-what-lenders-accept",
 "https://jobs.ledgerbloc.com/immigration-lawyer-for-partner-spouse-visa"
   ];
