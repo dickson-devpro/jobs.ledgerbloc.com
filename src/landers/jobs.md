@@ -392,14 +392,7 @@ fbq('track', 'PageView');
 <script>
 (function () {
   var links = [
-"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
-"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa-2026",
-"https://jobs.ledgerbloc.com/us-tax-reporting-obligations-non-residents",
-"https://jobs.ledgerbloc.com/us-tax-forms-explained-w2-1099-1040",
 "https://jobs.ledgerbloc.com/care-assistant-jobs-uk-visa-sponsorship",
-"https://jobs.ledgerbloc.com/first-time-home-buyer-mortgage-requirements",
-"https://jobs.ledgerbloc.com/bringing-dependants-on-sponsored-work-visa",
-"https://jobs.ledgerbloc.com/germany-job-seeker-visa-work-visa-requirements",
 "https://jobs.ledgerbloc.com/how-to-pay-us-tax-from-overseas"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
