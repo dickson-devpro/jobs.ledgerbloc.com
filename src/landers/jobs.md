@@ -392,12 +392,12 @@ fbq('track', 'PageView');
 <script>
 (function () {
   var links = [
-"https://jobs.classpawa.com/top-best-ways-to-send-money-home-from-the-usa-2026-2027",
-"https://jobs.classpawa.com/civil-engineer-job-in-uk-with-visa-sponorship",
-"https://jobs.classpawa.com/healthcare-administrator-job-in-the-us-with-visa-sponsorship",
-"https://jobs.classpawa.com/software-developer-engineer-job-in-the-us-with-visa-sponsorship",
-"https://jobs.classpawa.com/e-2-treaty-investor-visa-requirements-2026-start-a-us-business-with-100000-and-live-in-america",
-"https://jobs.classpawa.com/data-scientist-data-analyst-job-in-the-us-with-visa-sponsorship"
+"https://jobs.ledgerbloc.com/germany-job-seeker-visa-work-visa-requirements",
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
+"https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa-2026",
+"https://jobs.ledgerbloc.com/corporate-immigration-services-what-they-do-cost",
+"https://jobs.ledgerbloc.com/software-tech-firms-that-sponsor-international-hires",
+"https://jobs.ledgerbloc.com/cost-of-uk-private-health-insurance-explained"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
   var button = document.getElementById('continue-button');
