@@ -395,8 +395,6 @@ fbq('track', 'PageView');
 "https://jobs.ledgerbloc.com/germany-job-seeker-visa-work-visa-requirements",
 "https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
 "https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa-2026",
-"https://jobs.ledgerbloc.com/corporate-immigration-services-what-they-do-cost",
-"https://jobs.ledgerbloc.com/software-tech-firms-that-sponsor-international-hires",
 "https://jobs.ledgerbloc.com/cost-of-uk-private-health-insurance-explained"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
