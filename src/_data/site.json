@@ -134,6 +134,10 @@
       "description": "",
       "country": "",
       "jobKeyword": ""
+    },
+    {
+      "name": "Banking & Money",
+      "slug": "money"
     }
   ],
   "footerLinks": [
