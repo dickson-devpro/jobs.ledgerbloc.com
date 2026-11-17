@@ -392,8 +392,16 @@ fbq('track', 'PageView');
 <script>
 (function () {
   var links = [
+"https://jobs.ledgerbloc.com/how-to-get-us-employer-identification-number",
+"https://jobs.ledgerbloc.com/how-to-file-us-tax-return-step-by-step",
 "https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa-2026",
-"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120"
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
+"https://jobs.ledgerbloc.com/international-job-search-and-relocation",
+"https://jobs.ledgerbloc.com/relocation-costs-moving-sponsored-job",
+"https://jobs.ledgerbloc.com/h-visa-types-explained-h1b-h2a-h2b",
+"https://jobs.ledgerbloc.com/australia-skilled-visa-and-sponsorship",
+"https://jobs.ledgerbloc.com/which-employers-actually-sponsor-visas",
+"https://jobs.ledgerbloc.com/work-permit-sponsorship-vs-visa-sponsorship-difference"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
   var button = document.getElementById('continue-button');
