@@ -45,48 +45,6 @@
   ],
   "categories": [
     {
-      "name": "USA",
-      "slug": "usa",
-      "description": "H-1B, EB-3 and employer-sponsored roles in the United States — who sponsors, what they pay, and how to apply.",
-      "country": "usa",
-      "jobKeyword": "visa sponsorship"
-    },
-    {
-      "name": "Canada",
-      "slug": "canada",
-      "description": "LMIA-backed and express-entry-friendly jobs across Canada, from skilled trades to healthcare.",
-      "country": "canada",
-      "jobKeyword": "LMIA"
-    },
-    {
-      "name": "UK & Ireland",
-      "slug": "uk",
-      "description": "Skilled Worker visa roles with licensed sponsors in the UK and Ireland.",
-      "country": "uk",
-      "jobKeyword": "visa sponsorship"
-    },
-    {
-      "name": "Europe",
-      "slug": "europe",
-      "description": "EU Blue Card and sponsorship roles in Germany, the Netherlands, France and beyond.",
-      "country": "germany",
-      "jobKeyword": "english speaking"
-    },
-    {
-      "name": "Australia & NZ",
-      "slug": "australia",
-      "description": "482 and skilled-migration roles across Australia and New Zealand.",
-      "country": "australia",
-      "jobKeyword": "visa sponsorship"
-    },
-    {
-      "name": "Gulf & Middle East",
-      "slug": "gulf",
-      "description": "Employer-sponsored contracts in the UAE, Qatar and the wider Gulf.",
-      "country": "uae",
-      "jobKeyword": "visa sponsorship"
-    },
-    {
       "name": "For Employers",
       "slug": "employers",
       "description": "",

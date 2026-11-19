@@ -112,59 +112,6 @@
     }
   ],
   "refreshOlderThanDays": 45,
-  "jobMatrix": {
-    "jobs": [
-      "registered nurse",
-      "care assistant",
-      "truck driver",
-      "warehouse operative",
-      "welder",
-      "electrician",
-      "chef",
-      "farm worker",
-      "cleaner",
-      "construction labourer",
-      "software engineer",
-      "civil engineer",
-      "accountant",
-      "teacher",
-      "mechanic",
-      "security guard",
-      "hotel housekeeper",
-      "forklift driver"
-    ],
-    "countries": [
-      {
-        "slug": "usa",
-        "name": "USA",
-        "country": "usa"
-      },
-      {
-        "slug": "canada",
-        "name": "Canada",
-        "country": "canada"
-      },
-      {
-        "slug": "uk",
-        "name": "UK & Ireland",
-        "country": "uk"
-      },
-      {
-        "slug": "europe",
-        "name": "Europe",
-        "country": "germany"
-      },
-      {
-        "slug": "australia",
-        "name": "Australia & NZ",
-        "country": "australia"
-      },
-      {
-        "slug": "gulf",
-        "name": "Gulf & Middle East",
-        "country": "uae"
-      }
-    ]
-  },
+  "jobMatrix": [],
   "matrixOrder": "random"
 }
