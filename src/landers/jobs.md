@@ -394,7 +394,14 @@ fbq('track', 'PageView');
   var links = [
 "https://jobs.ledgerbloc.com/how-to-get-us-employer-identification-number",
 "https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa-2026",
-"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120"
+"https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
+"https://jobs.ledgerbloc.com/australia-skilled-visa-and-sponsorship",
+"https://jobs.ledgerbloc.com/bank-accounts-for-immigrants-without-ssn",
+"https://jobs.ledgerbloc.com/work-visa-health-insurance-requirements-by-country",
+"https://jobs.ledgerbloc.com/how-to-contact-consult-immigration-attorney",
+"https://jobs.ledgerbloc.com/how-to-file-us-tax-return-step-by-step",
+"https://jobs.ledgerbloc.com/us-tax-reporting-obligations-non-residents",
+"https://jobs.ledgerbloc.com/uk-immigration-lawyers-london-what-to-expect"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
   var button = document.getElementById('continue-button');
