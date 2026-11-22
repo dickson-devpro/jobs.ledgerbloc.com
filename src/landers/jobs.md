@@ -395,13 +395,7 @@ fbq('track', 'PageView');
 "https://jobs.ledgerbloc.com/how-to-get-us-employer-identification-number",
 "https://jobs.ledgerbloc.com/best-brokerage-accounts-for-non-resident-aliens-in-the-usa-2026",
 "https://jobs.ledgerbloc.com/how-to-file-us-business-taxes-as-a-non-resident-owner-form-5472-1120",
-"https://jobs.ledgerbloc.com/australia-skilled-visa-and-sponsorship",
-"https://jobs.ledgerbloc.com/bank-accounts-for-immigrants-without-ssn",
-"https://jobs.ledgerbloc.com/software-developer-sponsorship-by-country",
-"https://jobs.ledgerbloc.com/immigration-skills-charge-explained-employers",
-"https://jobs.ledgerbloc.com/hiring-international-workers-employer-obligations",
-"https://jobs.ledgerbloc.com/state-vs-federal-income-tax-us-guide",
-"https://jobs.ledgerbloc.com/us-income-tax-brackets-rates-explained"
+"https://jobs.ledgerbloc.com/renting-your-first-us-apartment-new-arrivals/"
   ];
   var radios = document.querySelectorAll('input[name="amount"]');
   var button = document.getElementById('continue-button');
